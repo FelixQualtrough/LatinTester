@@ -2166,6 +2166,7 @@ async function GetUserInput() {
 //Apparently using async and await makes it so that the function waits until the user has inputted something before continuing
 async function CheckAnswer(currentValue) {
     const textbox = document.getElementById('textbox');
+    document.getElementById('Info').innerHTML="";
     i = currentValue;
     Question = i[0];
     CorrectAnswer = i[1];
@@ -2176,7 +2177,7 @@ async function CheckAnswer(currentValue) {
     document.getElementById('Prompt').innerHTML=Question.toUpperCase();
     await GetUserInput();
     if (UserAnswer == "skip" || UserAnswer == "") {
-        textbox.value = (`Answer(s): ${CorrectAnswer.join(", ")}`);
+        document.getElementById('Info').innerHTML=`Answer(s): ${CorrectAnswer.join(", ")}`;
         if (englat == "0") {
             Incorrect.push([Question, " ----- ", CorrectAnswer.join(", ")]);
         } else {
@@ -2187,31 +2188,29 @@ async function CheckAnswer(currentValue) {
         if (CorrectAnswer.includes(UserAnswer)) {
             //Makes it show you other correct answers if there are any
             if (CorrectAnswer.length == 1) {
-                alert("That was correct! Well done!\n");
+                document.getElementById('Info').innerHTML="That was correct! Well done!";
             } else {
-                alert(`That was correct! Well done! Other possible answers include: ${CorrectAnswer.slice(0, CorrectAnswer.indexOf(UserAnswer))} ${CorrectAnswer.slice(CorrectAnswer.indexOf(UserAnswer)+1)}\n`);
+                document.getElementById('Info').innerHTML=`That was correct! Well done! Other possible answers include: ${CorrectAnswer.slice(0, CorrectAnswer.indexOf(UserAnswer))} ${CorrectAnswer.slice(CorrectAnswer.indexOf(UserAnswer)+1)}`;
             }
             mark += 1;
             ToRemove.push(i);
         } else {
-            alert("Unlucky, but that was the wrong answer. Here is the correct answer:" + CorrectAnswer);
+            document.getElementById('Info').innerHTML="Unlucky, but that was the wrong answer. Here is the correct answer:" + CorrectAnswer;
             Incorrect.push([Question, " ----- ", CorrectAnswer.join(", ")]); // This is new - does it work? Could it be made into a function? --> Would need to change depending on englat
             }
         } else {
-        //English to latin version
-        //WORK ON THIS - ANSWER CHECKER FOR ENGLISH TO LATIN
-        //Fix this for in + acc and improve for other words (mainly prepositions)
-        if (UserAnswer == CorrectAnswer || UserAnswer == CorrectAnswer.split(0,CorrectAnswer.indexOf(","))) {
-            alert("That was correct! Well done!\n");
+        if (UserAnswer == CorrectAnswer || UserAnswer == CorrectAnswer.slice(0,CorrectAnswer.indexOf(","))) {
+            document.getElementById('Info').innerHTML="That was correct! Well done!";
             mark += 1;
             ToRemove.push(i);
         } else {
-            alert("Unlucky, but that was the wrong answer. Here is the correct answer:" + CorrectAnswer);
+            document.getElementById('Info').innerHTML="Unlucky, but that was the wrong answer. Here is the correct answer:" + CorrectAnswer;
             Incorrect.push([Question + "-----" + CorrectAnswer]); // This is new - does it work? Could it be made into a function? --> Would need to change depending on englat
         }
         }
         }
         TotalQs += 1;
+        await waitingKeypress();
 } 
 
 function AddToWantedVocab(properties, answers, indexOf) {
@@ -2235,7 +2234,8 @@ function AddVocab() {
     }   
 }
 
-const WantedVocabBackup = WantedVocab;
+//I have tried .slice() to make a backup copy of the wanted vocab so that I can reset it later on as using const doesn't seem to work
+const WantedVocabBackup = WantedVocab
 
 function BeginTest() {
     Choosing = document.getElementById('Choosing');
@@ -2261,46 +2261,37 @@ async function GameLoop() {
     mark = 0;
     Incorrect = [];
     ToRemove = [];
-    AddVocab();
     shuffle(WantedVocab);
     //WantedVocab.forEach(CheckAnswer);
     for (i of WantedVocab) {
         await CheckAnswer(i);
     }
-
-    alert(`Score: ${mark}/${TotalQs}`);
+    document.getElementById('Info').innerHTML=`Score: ${mark}/${TotalQs}<br>`;
     if (mark != TotalQs) {
-        alert(`The word(s) you got incorrect, along with their answers, were:\n${Incorrect.join("\n")}`);
+        document.getElementById('Info').innerHTML+=`The word(s) you got incorrect, along with their answers, were:<br>${Incorrect.join("<br>")}`;
     }
     //Make it so that after the test, you can redo it with only the ones you got wrong
-
-    RetestMode = input("\nWould you like to end (say '0'), or retest with the previous vocab (say '1'), incorrect vocab (say '2'), different vocab (say '3'), or the original vocab (say '4')?\n").toLowerCase().trim()
-    //This makes it keep asking you until you pick 1, 2 or 3 - I should be able to use the InputAllowed function, but I need to edit it so it can take 3 options
-    while (! ['0', '1', '2', '3', '4'].includes(RetestMode)) {
-        RetestMode = str(input("Sorry, but that is not an option. Say '{}', '{}', '{}', '{}' or '{}'. Do NOT use any punctuation.\n".format(0, 1, 2, 3, 4))).trim().toLowerCase()
+    document.getElementById('Prompt').innerHTML="Would you like to retest with the previous vocab (say '1'), incorrect vocab (say '2') or  different vocab (say '3')?";//, or the original vocab (say '4')?
+    await GetUserInput();
+    while (! ['1', '2', '3'].includes(UserAnswer)) {
+        document.getElementById('Prompt').innerHTML="That is not a valid answer. Would you like to retest with the previous vocab (say '1'), incorrect vocab (say '2') or different vocab (say '3')?"; //, or the original vocab (say '4')?
+        await GetUserInput();        
     }
-    if (RetestMode == '0') {
-       return
-    } else if (RetestMode == '1') {
+    if (UserAnswer == '1') {
         //Redo previous vocab
         GameLoop();
-    } else if (RetestMode == '2') {
+    } else if (UserAnswer == '2') {
         //Only incorrect vocab
         for (i of ToRemove.reverse()) {
            WantedVocab.splice(i, 1);
         }
         GameLoop()
-    } else if (RetestMode == '3') {
+    } else if (UserAnswer == '3') {
         //Different vocab
-        WantedVocab = [];
-        IntroQs();
-        AddVocab(CLC_or_Eduqas);
-        GameLoop();
-    } else {
+        location.reload();
+    } //else { //Not working - need to figure out how to reset WantedVocab to the original array
         //Original vocab 
-        WantedVocab = WantedVocabBackup;
-        GameLoop();
-    }
+        //WantedVocab = WantedVocabBackup;
+        //GameLoop();
+    //}
 }
-
-GameLoop();
