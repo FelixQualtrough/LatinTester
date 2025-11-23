@@ -1,0 +1,136 @@
+header {
+    height : 60px;
+    background-color: aqua;
+    width: 100%;
+    text-align: center;
+}
+
+header h1 {
+    margin : 0;
+    line-height: 60px;
+    font-size: 30px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, sans-serif;
+    background-color: lightblue;
+    position: relative;
+}
+
+input.VocabChoice {
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+div.VocabChoice {
+    background-color: lightslategray;
+    display: flex;
+    flex-direction: column;
+}
+
+div.VocabChoice ul {
+    padding: 5px 15px 5px 15px;
+}
+
+div.AllVocab {
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+div.OtherVocab {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    font-size: 30px;
+}
+
+section button {
+    position: absolute;
+    top: 230%;
+    left: 50%;
+    transform: translate(-50%, -0%);
+}
+
+div.OtherInputs {
+    position: absolute;
+    top: 180%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+}
+
+div.OtherInputs p {
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: darkorange;
+}
+
+h4 {
+    font-size: 20px
+}
+
+.OtherInputs label {
+    display: inline-block; 
+}
+
+.OtherInputs input{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+div.Test {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    margin-top: 100px;
+    transform: translate(-50%, -50%);
+}
+
+div.Test input {
+    height: 50px;
+    width: 350px;
+    font-size: 25px;
+    margin-left: 35px;
+}
+
+.Test h4 {
+    font-size: 40px;
+}
+
+.Test button {
+    width: 200px;
+    height: 70px;
+    font-size: 40px;
+    margin-right: 30px;
+}
+
+#Buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}

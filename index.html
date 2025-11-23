@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta id = "" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latin Tester</title>
+    <link rel="stylesheet" href="styles.css">
+    <script langauge = 'JavaScript' src = "app.js">
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Latin Tester Eduqas - Prototype</h1>
+    </header>
+    <section id = "Choosing">
+    <div class = "VocabChoice">
+        <div class = "AllVocab">
+        <input type = "checkbox" onCLick = "All(this)">All Vocab
+        </div>
+        <div class = "OtherVocab">
+        <ul>
+            <li><input type = "checkbox" class = "Vocab" onCLick = "toggle(this, 'Nouns')">Nouns (All)</li>
+            <li><input type = "checkbox" class = "Vocab" id = "nouns1" name = "Nouns">Nouns 1</li>
+            <li><input type = "checkbox" class = "Vocab" id = "nouns2" name = "Nouns">Nouns 2</li>
+            <li><input type = "checkbox" class = "Vocab" id = "nouns3" name = "Nouns">Nouns 3</li>
+            <li><input type = "checkbox" class = "Vocab" id = "nouns4" name = "Nouns">Nouns 4</li>
+            <li><input type = "checkbox" class = "Vocab" id = "nouns5" name = "Nouns">Nouns 5</li>
+        </ul>
+        <ul>
+            <li><input type = "checkbox" class = "Vocab" onCLick = "toggle(this, 'Verbs')">Verbs (All)</li>
+            <li><input type = "checkbox" class = "Vocab" id = "verbs1" name = "Verbs">Verbs 1</li>
+            <li><input type = "checkbox" class = "Vocab" id = "verbs2" name = "Verbs">Verbs 2</li>
+            <li><input type = "checkbox" class = "Vocab" id = "verbs3" name = "Verbs">Verbs 3</li>
+            <li><input type = "checkbox" class = "Vocab" id = "verbs4" name = "Verbs">Verbs 4</li>
+            <li><input type = "checkbox" class = "Vocab" id = "IrregVerbs" name = "Verbs">Irregular Verbs</li>
+            <li><input type = "checkbox" class = "Vocab" id = "DepVerbs" name = "Verbs">Deponent Verbs</li>
+        </ul>
+        <ul>
+            <li><input type = "checkbox" class = "Vocab" onCLick = "toggle(this, 'Adjectives')">Adjectives (All)</li>
+            <li><input type = "checkbox" class = "Vocab" id = "212Adj" name = "Adjectives">Regular 2-1-2 Adjectives</li>
+            <li><input type = "checkbox" class = "Vocab" id = "33Adj" name = "Adjectives">Regular 3-3 Adjectives</li>
+            <li><input type = "checkbox" class = "Vocab" id = "IrregCompAdj" name = "Adjectives">Irregular Comparative Adjectives</li>
+        </ul>
+        <ul>
+            <li><input type = "checkbox" class = "Vocab" onCLick = "toggle(this, 'Others')">Others (All)</li>
+            <li><input type = "checkbox" class = "Vocab" id = "Adverbs" name = "Others">Adverbs</li>
+            <li><input type = "checkbox" class = "Vocab" id = "Pronouns" name = "Others">Pronouns</li>
+            <li><input type = "checkbox" class = "Vocab" id = "Prepositions" name = "Others">Prepositions</li>
+            <li><input type = "checkbox" class = "Vocab" id = "Conjunctions" name = "Others">Conjunctions</li>
+            <li><input type = "checkbox" class = "Vocab" id = "Miscellaneous" name = "Others">Miscellaneous</li>
+            <li><input type = "checkbox" class = "Vocab" id = "Numerals" name = "Others">Numerals</li>
+        </ul>
+        </div>
+    </div>
+
+    <div class = "OtherInputs">
+        <input type="radio" name="EngLat" checked>
+        <label><h4>Latin to English</h4></label><br>
+        <input type="radio" name="EngLat">
+        <label><h4>English to Latin</h4></label><br>
+    </div>
+
+    <button onclick = "BeginTest(); GameLoop()"><strong>Test!</strong></button>
+    </section>
+
+    <div id = "Test" class = "Test" style="display: none;">
+        <h4 id = "Prompt"></h4>
+        <input id = "textbox" type="text" placeholder="Enter Answer..." autocomplete="off">
+        <div id = "Buttons">
+            <button style="display: none;">Reveal</button>
+            <button style="display: none;">Submit</button>
+        </div>
+    </div>
+</body>
+</html>
