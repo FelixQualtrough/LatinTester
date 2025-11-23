@@ -107,19 +107,20 @@ div.Test {
     flex-direction: column;
     position: absolute;
     left: 50%;
-    margin-top: 100px;
+    margin-top: 300px;
     transform: translate(-50%, -50%);
 }
 
 div.Test input {
     height: 50px;
-    width: 350px;
+    width: 400px;
     font-size: 25px;
     margin-left: 35px;
 }
 
 .Test h4 {
-    font-size: 40px;
+    font-size: 30px;
+    width: 400px;
 }
 
 .Test button {
@@ -133,4 +134,8 @@ div.Test input {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+}
+
+.Test h3 {
+    width: 400px;
 }
