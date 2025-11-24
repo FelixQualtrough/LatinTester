@@ -2703,6 +2703,1365 @@ var Eduqas = [
         'englatmast' : 0,
         'latengmast' : 1
     },
+    {
+        '1stpp' :'audax',
+        '2,3,4pp' : 'audacis',
+        'answers' : ['bold','daring'],
+        'group' : '33Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'brevis',
+        '2,3,4pp' : 'breve',
+        'answers' : ['short','brief'],
+        'group' : '33Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'celer',
+        '2,3,4pp' : 'celere',
+        'answers' : ['quick','fast'],
+        'group' : '33Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'crudelis',
+        '2,3,4pp' : 'crudele',
+        'answers' : ['cruel'],
+        'group' : '33Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'difficilis',
+        '2,3,4pp' : 'difficile',
+        'answers' : ['difficult'],
+        'group' : '33Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'dives',
+        '2,3,4pp' : 'divitis',
+        'answers' : ['rich'],
+        'group' : '33Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'facilis',
+        '2,3,4pp' : 'facile',
+        'answers' : ['easy'],
+        'group' : '33Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'ferox',
+        '2,3,4pp' : 'ferocis',
+        'answers' : ['fierce','ferocious'],
+        'group' : '33Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'fidelis',
+        '2,3,4pp' : 'fidele',
+        'answers' : ['faithful','loyal'],
+        'group' : '33Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'fortis',
+        '2,3,4pp' : 'forte',
+        'answers' : ['brave'],
+        'group' : '33Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'gravis',
+        '2,3,4pp' : 'grave',
+        'answers' : ['heavy','serious'],
+        'group' : '33Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'infelix',
+        '2,3,4pp' : 'infelicis',
+        'answers' : ['unlucky','unhappy'],
+        'group' : '33Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'ingens',
+        '2,3,4pp' : 'ingentis',
+        'answers' : ['huge'],
+        'group' : '33Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'iuvenis',
+        '2,3,4pp' : 'iuvenis',
+        'answers' : ['young'],
+        'group' : '33Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'omnis',
+        '2,3,4pp' : 'omne',
+        'answers' : ['all','every'],
+        'group' : '33Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'senex',
+        '2,3,4pp' : 'senis',
+        'answers' : ['old'],
+        'group' : '33Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'talis',
+        '2,3,4pp' : 'tale',
+        'answers' : ['such'],
+        'group' : '33Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'tristis',
+        '2,3,4pp' : 'triste',
+        'answers' : ['sad'],
+        'group' : '33Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'maior',
+        '2,3,4pp' : 'maius',
+        'answers' : ['bigger','larger','greater'],
+        'group' : 'IrregCompAdj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'melior',
+        '2,3,4pp' : 'melius',
+        'answers' : ['better'],
+        'group' : 'IrregCompAdj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'minor',
+        '2,3,4pp' : 'minus',
+        'answers' : ['smaller','less'],
+        'group' : 'IrregCompAdj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'peior',
+        '2,3,4pp' : 'peius',
+        'answers' : ['worse'],
+        'group' : 'IrregCompAdj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'plus',
+        '2,3,4pp' : 'pluris',
+        'answers' : ['more'],
+        'group' : 'IrregCompAdj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'adeo',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['so much','so greatly'],
+        'group' : 'Adverbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'antea',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['before'],
+        'group' : 'Adverbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'cur?',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['why?'],
+        'group' : 'Adverbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'bene',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['well'],
+        'group' : 'Adverbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'diu',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['for a long time'],
+        'group' : 'Adverbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'forte',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['by chance'],
+        'group' : 'Adverbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'frustra',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['in vain'],
+        'group' : 'Adverbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'heri',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['yesterday'],
+        'group' : 'Adverbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'hic',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['here'],
+        'group' : 'Adverbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'hodie',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['today'],
+        'group' : 'Adverbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'iam',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['now','already'],
+        'group' : 'Adverbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'ibi',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['there'],
+        'group' : 'Adverbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'interea',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['meanwhile'],
+        'group' : 'Adverbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'ita',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['in this way','so'],
+        'group' : 'Adverbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'ita vero',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['yes'],
+        'group' : 'Adverbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'itaque',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['and so','therefore'],
+        'group' : 'Adverbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'lente',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['slowly'],
+        'group' : 'Adverbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'libenter',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['willingly','gladly'],
+        'group' : 'Adverbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'magnopere',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['greatly','very much'],
+        'group' : 'Adverbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'minime',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['very little','least','no'],
+        'group' : 'Adverbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'mox',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['soon'],
+        'group' : 'Adverbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'multo',
+        '2,3,4pp' : 'multum',
+        'answers' : ['much'],
+        'group' : 'Adverbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'necesse',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['necessary'],
+        'group' : 'Adverbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'numquam',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['never'],
+        'group' : 'Adverbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'nunc',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['now'],
+        'group' : 'Adverbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'olim',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['once','some time ago'],
+        'group' : 'Adverbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'paene',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['almost','nearly'],
+        'group' : 'Adverbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'postea',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['afterwards'],
+        'group' : 'Adverbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'postquam',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['after','when'],
+        'group' : 'Adverbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'postridie',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['on the next day'],
+        'group' : 'Adverbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'qualis?',
+        '2,3,4pp' : 'quale?',
+        'answers' : ['what sort of?'],
+        'group' : 'Adverbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'quam',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['than','how… ?','how… !'],
+        'group' : 'Adverbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'quis?',
+        '2,3,4pp' : 'quid?',
+        'answers' : ['who? what?'],
+        'group' : 'Adverbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'quo?',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['where to?'],
+        'group' : 'Adverbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'quo modo?',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['how? in what way?'],
+        'group' : 'Adverbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'quot?',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['how many?'],
+        'group' : 'Adverbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'saepe',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['often'],
+        'group' : 'Adverbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'semper',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['always'],
+        'group' : 'Adverbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'sic',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['thus','in this way'],
+        'group' : 'Adverbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'sicut',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['just as','like'],
+        'group' : 'Adverbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'statim',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['at once','immediately'],
+        'group' : 'Adverbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'subito',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['suddenly'],
+        'group' : 'Adverbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'tam',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['so'],
+        'group' : 'Adverbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'tamen',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['however'],
+        'group' : 'Adverbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'tandem',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['at last','finally'],
+        'group' : 'Adverbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'tot',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['so many'],
+        'group' : 'Adverbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'ubi',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['where','when','where?'],
+        'group' : 'Adverbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'umquam',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['ever'],
+        'group' : 'Adverbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'unde',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['from where'],
+        'group' : 'Adverbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'vehementer',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['violently','loudly','strongly'],
+        'group' : 'Adverbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'vix',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['scarcely','hardly','with difficulty'],
+        'group' : 'Adverbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'aliquis',
+        '2,3,4pp' : 'aliquid',
+        'answers' : ['someone','something'],
+        'group' : 'Pronouns',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'alius',
+        '2,3,4pp' : 'alia, aliud',
+        'answers' : ['other','another','else'],
+        'group' : 'Pronouns',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'alter',
+        '2,3,4pp' : 'altera, alterum',
+        'answers' : ['the other','another','the second of two'],
+        'group' : 'Pronouns',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'ego',
+        '2,3,4pp' : 'mei',
+        'answers' : ['I','me'],
+        'group' : 'Pronouns',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'hic',
+        '2,3,4pp' : 'haec, hoc',
+        'answers' : ['this'],
+        'group' : 'Pronouns',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'ille',
+        '2,3,4pp' : 'illa, illud',
+        'answers' : ['that','he','she','it'],
+        'group' : 'Pronouns',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'is',
+        '2,3,4pp' : 'ea, id',
+        'answers' : ['this','that','he','she','it','them'],
+        'group' : 'Pronouns',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'meus',
+        '2,3,4pp' : 'mea, meum',
+        'answers' : ['my'],
+        'group' : 'Pronouns',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'nos',
+        '2,3,4pp' : 'nostrum',
+        'answers' : ['we','us'],
+        'group' : 'Pronouns',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'noster',
+        '2,3,4pp' : 'nostra, nostrum',
+        'answers' : ['our'],
+        'group' : 'Pronouns',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'qui',
+        '2,3,4pp' : 'quae, quod',
+        'answers' : ['who','which'],
+        'group' : 'Pronouns',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'se',
+        '2,3,4pp' : 'sui',
+        'answers' : ['himself','herself','itself','themselves'],
+        'group' : 'Pronouns',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'suus',
+        '2,3,4pp' : 'sua, suum',
+        'answers' : ['his','her','its','their (own)'],
+        'group' : 'Pronouns',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'tu',
+        '2,3,4pp' : 'tui',
+        'answers' : ['you (singular)'],
+        'group' : 'Pronouns',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'tuus',
+        '2,3,4pp' : 'tua, tuum',
+        'answers' : ['your (singular)','yours'],
+        'group' : 'Pronouns',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'vester',
+        '2,3,4pp' : 'vestra, vestrum',
+        'answers' : ['your (plural)','yours'],
+        'group' : 'Pronouns',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'vos',
+        '2,3,4pp' : 'vestrum',
+        'answers' : ['you (plural)'],
+        'group' : 'Pronouns',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },    
+    {
+        '1stpp' :'apud (+ acc)',
+        '2,3,4pp' : '',
+        'answers' : ['among', 'with', 'at the house of'],
+        'group' : 'Prepositions',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'circum (+ acc)',
+        '2,3,4pp' : '',
+        'answers' : ['around'],
+        'group' : 'Prepositions',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'contra (+ acc)',
+        '2,3,4pp' : '',
+        'answers' : ['against'],
+        'group' : 'Prepositions',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'cum (+ abl)',
+        '2,3,4pp' : '',
+        'answers' : ['with'],
+        'group' : 'Prepositions',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'cum (+ subjunctive)',
+        '2,3,4pp' : '',
+        'answers' : ['when', 'since'],
+        'group' : 'Prepositions',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'de (+ abl)',
+        '2,3,4pp' : '',
+        'answers' : ['from', 'down from', 'about'],
+        'group' : 'Prepositions',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'e, ex (+ abl)',
+        '2,3,4pp' : '',
+        'answers' : ['from', 'out of'],
+        'group' : 'Prepositions',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'in (+ acc)',
+        '2,3,4pp' : '',
+        'answers' : ['into', 'onto'],
+        'group' : 'Prepositions',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'in (+ abl)',
+        '2,3,4pp' : '',
+        'answers' : ['in', 'on'],
+        'group' : 'Prepositions',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'inter (+ acc)',
+        '2,3,4pp' : '',
+        'answers' : ['among', 'between'],
+        'group' : 'Prepositions',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'per (+ acc)',
+        '2,3,4pp' : '',
+        'answers' : ['through', 'along'],
+        'group' : 'Prepositions',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'post (+ acc)',
+        '2,3,4pp' : '',
+        'answers' : ['after', 'behind'],
+        'group' : 'Prepositions',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'pro (+ abl)',
+        '2,3,4pp' : '',
+        'answers' : ['in front of', 'for', 'in return for'],
+        'group' : 'Prepositions',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'prope (+ acc)',
+        '2,3,4pp' : '',
+        'answers' : ['near'],
+        'group' : 'Prepositions',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'propter (+ acc)',
+        '2,3,4pp' : '',
+        'answers' : ['on account of', 'because of'],
+        'group' : 'Prepositions',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'sine (+ abl)',
+        '2,3,4pp' : '',
+        'answers' : ['without'],
+        'group' : 'Prepositions',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'sub (+ acc/abl)',
+        '2,3,4pp' : '',
+        'answers' : ['under', 'beneath'],
+        'group' : 'Prepositions',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'trans (+ acc)',
+        '2,3,4pp' : '',
+        'answers' : ['across'],
+        'group' : 'Prepositions',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'ac, atque',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['and'],
+        'group' : 'Prepositions',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'aut… aut',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['either… or'],
+        'group' : 'Prepositions',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'deinde',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['then'],
+        'group' : 'Prepositions',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'dum',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['while'],
+        'group' : 'Prepositions',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'enim',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['for'],
+        'group' : 'Prepositions',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'et',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['and'],
+        'group' : 'Prepositions',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'etiam',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['also','even'],
+        'group' : 'Prepositions',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'igitur',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['therefore','and so'],
+        'group' : 'Prepositions',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'iterum',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['again'],
+        'group' : 'Prepositions',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'nam',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['for'],
+        'group' : 'Prepositions',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'ne',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['that… not','so that… not'],
+        'group' : 'Prepositions',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'-ne (added to end of word)',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['introduces question'],
+        'group' : 'Prepositions',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'nec… nec',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['neither…nor'],
+        'group' : 'Prepositions',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'neque… neque',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['neither…nor'],
+        'group' : 'Prepositions',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'non',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['not'],
+        'group' : 'Prepositions',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'nonne?',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['surely?'],
+        'group' : 'Prepositions',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'num',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['whether'],
+        'group' : 'Prepositions',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'num?',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['surely… not?'],
+        'group' : 'Prepositions',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'quamquam',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['although'],
+        'group' : 'Prepositions',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'-que (added to end of word)',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['and'],
+        'group' : 'Prepositions',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'quod',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['because'],
+        'group' : 'Prepositions',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'quoque',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['also'],
+        'group' : 'Prepositions',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'sed',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['but'],
+        'group' : 'Prepositions',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'si',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['if'],
+        'group' : 'Prepositions',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'simulac, simulatque',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['as soon as'],
+        'group' : 'Prepositions',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'ut (+ subjunctive)',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['that','so that','in order that'],
+        'group' : 'Prepositions',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'ut (+ indicative)',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['as'],
+        'group' : 'Prepositions',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'nemo',
+        '2,3,4pp' : 'neminis',
+        'answers' : ['no one','nobody'],
+        'group' : 'Misc',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'nihil',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['nothing'],
+        'group' : 'Misc',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'re-',
+        '2,3,4pp' : 'prefix used with verbs',
+        'answers' : ['back'],
+        'group' : 'Misc',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'centum',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['a hundred'],
+        'group' : 'Nums',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'decem',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['ten'],
+        'group' : 'Nums',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'duo',
+        '2,3,4pp' : 'duae, duo',
+        'answers' : ['two'],
+        'group' : 'Nums',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'mille',
+        '2,3,4pp' : 'pl = milia',
+        'answers' : ['thousand'],
+        'group' : 'Nums',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'novem',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['nine'],
+        'group' : 'Nums',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'octo',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['eight'],
+        'group' : 'Nums',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'quattuor',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['four'],
+        'group' : 'Nums',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'quinque',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['five'],
+        'group' : 'Nums',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'septem',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['seven'],
+        'group' : 'Nums',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'sex',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['six'],
+        'group' : 'Nums',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'tres',
+        '2,3,4pp' : 'tria',
+        'answers' : ['three'],
+        'group' : 'Nums',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'unus',
+        '2,3,4pp' : 'una, unum',
+        'answers' : ['one'],
+        'group' : 'Nums',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
   ];
 
 var WantedVocab = [];
