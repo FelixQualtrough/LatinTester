@@ -2136,6 +2136,573 @@ var Eduqas = [
         'englatmast' : 0,
         'latengmast' : 1
     },
+    {
+        '1stpp' :'absum',
+        '2,3,4pp' : 'abesse',
+        'answers' : ['be out','be absent','be away'],
+        'group' : 'IrregVerbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'adsum',
+        '2,3,4pp' : 'adesse',
+        'answers' : ['be here','be present'],
+        'group' : 'IrregVerbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'aufero',
+        '2,3,4pp' : 'auferre, abstuli, ablatus',
+        'answers' : ['take away','carry off','steal'],
+        'group' : 'IrregVerbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'coepi',
+        '2,3,4pp' : 'coepisse, coeptus',
+        'answers' : ['began'],
+        'group' : 'IrregVerbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'eo',
+        '2,3,4pp' : 'ire, ii',
+        'answers' : ['go'],
+        'group' : 'IrregVerbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'fero',
+        '2,3,4pp' : 'ferre, tuli, latus',
+        'answers' : ['bring','carry','bear'],
+        'group' : 'IrregVerbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'inquit',
+        '2,3,4pp' : '(n/a)',
+        'answers' : ['say','said'],
+        'group' : 'IrregVerbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'nolo',
+        '2,3,4pp' : 'nolle, nolui',
+        'answers' : ['not want','refuse'],
+        'group' : 'IrregVerbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'offero',
+        '2,3,4pp' : 'offere, obtuli, oblatus',
+        'answers' : ['offer'],
+        'group' : 'IrregVerbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'possum',
+        '2,3,4pp' : 'posse',
+        'answers' : ['can','be able'],
+        'group' : 'IrregVerbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'redeo',
+        '2,3,4pp' : 'redire, redii',
+        'answers' : ['go back','come back','return'],
+        'group' : 'IrregVerbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'refero',
+        '2,3,4pp' : 'referre, retuli, relatus',
+        'answers' : ['bring back','carry back','report','tell'],
+        'group' : 'IrregVerbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'sum',
+        '2,3,4pp' : 'esse, fui',
+        'answers' : ['be'],
+        'group' : 'IrregVerbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'tollo',
+        '2,3,4pp' : 'tollere, sustuli, sublatus',
+        'answers' : ['raise','lift up'],
+        'group' : 'IrregVerbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'volo',
+        '2,3,4pp' : 'velle, volui',
+        'answers' : ['want'],
+        'group' : 'IrregVerbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'conor',
+        '2,3,4pp' : 'conari, conatus sum',
+        'answers' : ['try'],
+        'group' : 'DepVerbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'egredior',
+        '2,3,4pp' : 'egredi, egressus sum',
+        'answers' : ['go out'],
+        'group' : 'DepVerbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'ingredior',
+        '2,3,4pp' : 'ingredi, ingressus sum',
+        'answers' : ['enter'],
+        'group' : 'DepVerbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'loquor',
+        '2,3,4pp' : 'loqui, locutus sum',
+        'answers' : ['speak'],
+        'group' : 'DepVerbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'morior',
+        '2,3,4pp' : 'mori, mortuus sum',
+        'answers' : ['die'],
+        'group' : 'DepVerbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'progredior',
+        '2,3,4pp' : 'progredi, progressus sum',
+        'answers' : ['advance'],
+        'group' : 'DepVerbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'regredior',
+        '2,3,4pp' : 'regredi, regressus sum',
+        'answers' : ['go back','return'],
+        'group' : 'DepVerbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'sequor',
+        '2,3,4pp' : 'sequi, secutus sum',
+        'answers' : ['follow'],
+        'group' : 'DepVerbs',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'altus',
+        '2,3,4pp' : 'alta, altum',
+        'answers' : ['high','deep'],
+        'group' : '212Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'benignus',
+        '2,3,4pp' : 'benigna, benignum',
+        'answers' : ['kind','generous'],
+        'group' : '212Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'bonus',
+        '2,3,4pp' : 'bona, bonum',
+        'answers' : ['good'],
+        'group' : '212Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'carus',
+        '2,3,4pp' : 'cara, carum',
+        'answers' : ['dear'],
+        'group' : '212Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'ceteri',
+        '2,3,4pp' : 'ceterae, cetera',
+        'answers' : ['the rest','the others'],
+        'group' : '212Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'dirus',
+        '2,3,4pp' : 'dira, dirum',
+        'answers' : ['dreadful'],
+        'group' : '212Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'durus',
+        '2,3,4pp' : 'dura, durum',
+        'answers' : ['hard','harsh'],
+        'group' : '212Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'iratus',
+        '2,3,4pp' : 'irata, iratum',
+        'answers' : ['angry'],
+        'group' : '212Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'laetus',
+        '2,3,4pp' : 'laeta, laetum',
+        'answers' : ['happy'],
+        'group' : '212Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'latus',
+        '2,3,4pp' : 'lata, latum',
+        'answers' : ['wide'],
+        'group' : '212Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'longus',
+        '2,3,4pp' : 'longa, longum',
+        'answers' : ['long'],
+        'group' : '212Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'magnus',
+        '2,3,4pp' : 'magna, magnum',
+        'answers' : ['big','large','great'],
+        'group' : '212Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'malus',
+        '2,3,4pp' : 'mala, malum',
+        'answers' : ['evil','bad'],
+        'group' : '212Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'maximus',
+        '2,3,4pp' : 'maxima, maximum',
+        'answers' : ['the biggest','the greatest','very big','very great'],
+        'group' : '212Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'medius',
+        '2,3,4pp' : 'media, medium',
+        'answers' : ['middle','middle of'],
+        'group' : '212Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'minimus',
+        '2,3,4pp' : 'minima, minimum',
+        'answers' : ['very little','very small'],
+        'group' : '212Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'miser',
+        '2,3,4pp' : 'misera, miserum',
+        'answers' : ['miserable','wretched','sad'],
+        'group' : '212Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'multus',
+        '2,3,4pp' : 'multa, multum',
+        'answers' : ['much','many'],
+        'group' : '212Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'novus',
+        '2,3,4pp' : 'nova, novum',
+        'answers' : ['new'],
+        'group' : '212Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'nullus',
+        '2,3,4pp' : 'nulla, nullum',
+        'answers' : ['not any','no'],
+        'group' : '212Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'optimus',
+        '2,3,4pp' : 'optima, optimum',
+        'answers' : ['the best','very good','excellent'],
+        'group' : '212Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'parvus',
+        '2,3,4pp' : 'parva, parvum',
+        'answers' : ['small'],
+        'group' : '212Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'pauci',
+        '2,3,4pp' : 'paucae, pauci',
+        'answers' : ['few','a few'],
+        'group' : '212Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'perterritus',
+        '2,3,4pp' : 'perterrita, perterritum',
+        'answers' : ['terrified'],
+        'group' : '212Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'pessimus',
+        '2,3,4pp' : 'pessima, pessimum',
+        'answers' : ['the worst','very bad'],
+        'group' : '212Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'plenus',
+        '2,3,4pp' : 'plena, plenum',
+        'answers' : ['full'],
+        'group' : '212Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'primus',
+        '2,3,4pp' : 'prima, primum',
+        'answers' : ['first'],
+        'group' : '212Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'proximus',
+        '2,3,4pp' : 'proxima, proximum',
+        'answers' : ['nearest','next to'],
+        'group' : '212Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'pulcher',
+        '2,3,4pp' : 'pulchra, pulchrum',
+        'answers' : ['beautiful','handsome'],
+        'group' : '212Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'quantus?',
+        '2,3,4pp' : 'quanta? quantum?',
+        'answers' : ['how big? how much?'],
+        'group' : '212Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'Romanus',
+        '2,3,4pp' : 'Romana, Romanum',
+        'answers' : ['Roman'],
+        'group' : '212Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'sacer',
+        '2,3,4pp' : 'sacra, sacrum',
+        'answers' : ['sacred'],
+        'group' : '212Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'saevus',
+        '2,3,4pp' : 'saeva, saevum',
+        'answers' : ['savage','cruel'],
+        'group' : '212Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'solus',
+        '2,3,4pp' : 'sola, solum',
+        'answers' : ['alone','lonely','only',"on one's own"],
+        'group' : '212Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'stultus',
+        '2,3,4pp' : 'stulta, stultum',
+        'answers' : ['stupid','foolish'],
+        'group' : '212Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'summus',
+        '2,3,4pp' : 'summa, summum',
+        'answers' : ['highest','greatest','top (of)'],
+        'group' : '212Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'tantus',
+        '2,3,4pp' : 'tanta, tantum',
+        'answers' : ['so great','such a great','so much'],
+        'group' : '212Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'totus',
+        '2,3,4pp' : 'tota, totum',
+        'answers' : ['whole'],
+        'group' : '212Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'tutus',
+        '2,3,4pp' : 'tuta, tutum',
+        'answers' : ['safe'],
+        'group' : '212Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'verus',
+        '2,3,4pp' : 'vera, verum',
+        'answers' : ['true','real'],
+        'group' : '212Adj',
+    
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
   ];
 
 var WantedVocab = [];
@@ -2271,10 +2838,10 @@ async function GameLoop() {
         document.getElementById('Info').innerHTML+=`The word(s) you got incorrect, along with their answers, were:<br>${Incorrect.join("<br>")}`;
     }
     //Make it so that after the test, you can redo it with only the ones you got wrong
-    document.getElementById('Prompt').innerHTML="Would you like to retest with the previous vocab (say '1'), incorrect vocab (say '2') or  different vocab (say '3')?";//, or the original vocab (say '4')?
+    document.getElementById('Prompt').innerHTML="Would you like to retest with: <br>The previous vocab (say 1), <br>Incorrect vocab (say 2) <br>Different vocab (say 3)?";//, or the original vocab (say '4')?
     await GetUserInput();
     while (! ['1', '2', '3'].includes(UserAnswer)) {
-        document.getElementById('Prompt').innerHTML="That is not a valid answer. Would you like to retest with the previous vocab (say '1'), incorrect vocab (say '2') or different vocab (say '3')?"; //, or the original vocab (say '4')?
+        document.getElementById('Prompt').innerHTML="That is not a valid answer. Would you like to retest with: <br>The previous vocab (say 1), <br>Incorrect vocab (say 2) <br>Different vocab (say 3)?"; //, or the original vocab (say '4')?
         await GetUserInput();        
     }
     if (UserAnswer == '1') {
@@ -2289,7 +2856,7 @@ async function GameLoop() {
     } else if (UserAnswer == '3') {
         //Different vocab
         location.reload();
-    } //else { //Not working - need to figure out how to reset WantedVocab to the original array
+    } //else { //Not working so removed for now- need to figure out how to reset WantedVocab to the original array
         //Original vocab 
         //WantedVocab = WantedVocabBackup;
         //GameLoop();
