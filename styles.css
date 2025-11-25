@@ -120,7 +120,7 @@ div.Test input {
 
 .Test h4 {
     font-size: 30px;
-    width: 400px;
+    width: 500px;
 }
 
 .Test button {
@@ -138,4 +138,6 @@ div.Test input {
 
 .Test h3 {
     width: 400px;
+    height: 200px;
+    overflow-y: auto;
 }
