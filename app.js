@@ -2382,7 +2382,7 @@ var Eduqas = [
     {
         '1stpp' :'ceteri',
         '2,3,4pp' : 'ceterae, cetera',
-        'answers' : ['the rest','the others'],
+        'answers' : ['the rest','the others', 'rest', 'others'],
         'group' : '212Adj',
     
         'englatmast' : 0,
@@ -2463,7 +2463,7 @@ var Eduqas = [
     {
         '1stpp' :'maximus',
         '2,3,4pp' : 'maxima, maximum',
-        'answers' : ['the biggest','the greatest','very big','very great'],
+        'answers' : ['the biggest','the greatest','very big','very great', 'biggest', 'greatest'],
         'group' : '212Adj',
     
         'englatmast' : 0,
@@ -2616,7 +2616,7 @@ var Eduqas = [
     {
         '1stpp' :'Romanus',
         '2,3,4pp' : 'Romana, Romanum',
-        'answers' : ['Roman'],
+        'answers' : ['Roman', 'roman'],
         'group' : '212Adj',
     
         'englatmast' : 0,
