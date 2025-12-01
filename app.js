@@ -3489,7 +3489,7 @@ var Eduqas = [
     {
         '1stpp' :'tu',
         '2,3,4pp' : 'tui',
-        'answers' : ['you (singular)'],
+        'answers' : ['you (singular)', 'you singular', 'you (sg)', 'you sg', 'you'],
         'group' : 'Pronouns',
     
         'englatmast' : 0,
@@ -3498,7 +3498,7 @@ var Eduqas = [
     {
         '1stpp' :'tuus',
         '2,3,4pp' : 'tua, tuum',
-        'answers' : ['your (singular)','yours'],
+        'answers' : ['your (singular)','yours', 'your', 'your (sg)', 'yours (sg)'],
         'group' : 'Pronouns',
     
         'englatmast' : 0,
@@ -3507,7 +3507,7 @@ var Eduqas = [
     {
         '1stpp' :'vester',
         '2,3,4pp' : 'vestra, vestrum',
-        'answers' : ['your (plural)','yours'],
+        'answers' : ['your (plural)','yours', 'your (pl)', 'yours (pl)', 'yours (plural)'],
         'group' : 'Pronouns',
     
         'englatmast' : 0,
@@ -3516,7 +3516,7 @@ var Eduqas = [
     {
         '1stpp' :'vos',
         '2,3,4pp' : 'vestrum',
-        'answers' : ['you (plural)'],
+        'answers' : ['you (plural)', 'you plural', 'you (pl)', 'you pl'],
         'group' : 'Pronouns',
     
         'englatmast' : 0,
@@ -3694,9 +3694,9 @@ var Eduqas = [
         'latengmast' : 1
     },
     {
-        '1stpp' :'aut… aut',
+        '1stpp' :'aut... aut',
         '2,3,4pp' : 'indecl',
-        'answers' : ['either… or'],
+        'answers' : ['either... or', 'either ... or', 'either...or'],
         'group' : 'Prepositions',
     
         'englatmast' : 0,
@@ -3705,7 +3705,7 @@ var Eduqas = [
     {
         '1stpp' :'deinde',
         '2,3,4pp' : 'indecl',
-        'answers' : ['then'],
+        'answers' : ['then', 'next'],
         'group' : 'Prepositions',
     
         'englatmast' : 0,
@@ -3777,7 +3777,7 @@ var Eduqas = [
     {
         '1stpp' :'ne',
         '2,3,4pp' : 'indecl',
-        'answers' : ['that… not','so that… not'],
+        'answers' : ['that... not', 'that ... not', 'that ...not', 'so that... not', 'so that ... not', 'so that...not','in order to... not', 'in order to ... not', 'in order to...not'],
         'group' : 'Prepositions',
     
         'englatmast' : 0,
@@ -3786,7 +3786,7 @@ var Eduqas = [
     {
         '1stpp' :'-ne (added to end of word)',
         '2,3,4pp' : 'indecl',
-        'answers' : ['introduces question'],
+        'answers' : ['introduces question', 'introduces a question'],
         'group' : 'Prepositions',
     
         'englatmast' : 0,
@@ -3795,7 +3795,7 @@ var Eduqas = [
     {
         '1stpp' :'nec… nec',
         '2,3,4pp' : 'indecl',
-        'answers' : ['neither…nor'],
+        'answers' : ['neither...nor', 'neither ... nor', 'neither... nor'],
         'group' : 'Prepositions',
     
         'englatmast' : 0,
@@ -3804,7 +3804,7 @@ var Eduqas = [
     {
         '1stpp' :'neque… neque',
         '2,3,4pp' : 'indecl',
-        'answers' : ['neither…nor'],
+        'answers' : ['neither...nor', 'neither ... nor', 'neither... nor'],
         'group' : 'Prepositions',
     
         'englatmast' : 0,
@@ -3822,7 +3822,7 @@ var Eduqas = [
     {
         '1stpp' :'nonne?',
         '2,3,4pp' : 'indecl',
-        'answers' : ['surely?'],
+        'answers' : ['surely?', 'surely ... ?', 'surely...?', 'surely... ?'],
         'group' : 'Prepositions',
     
         'englatmast' : 0,
@@ -3840,7 +3840,7 @@ var Eduqas = [
     {
         '1stpp' :'num?',
         '2,3,4pp' : 'indecl',
-        'answers' : ['surely… not?'],
+        'answers' : ['surely... not?', 'surely not?', 'surely not', 'surely...not?', 'surely ... not?', 'surely ... not', 'surely... not', 'surely...not'],
         'group' : 'Prepositions',
     
         'englatmast' : 0,
@@ -3957,7 +3957,7 @@ var Eduqas = [
     {
         '1stpp' :'centum',
         '2,3,4pp' : 'indecl',
-        'answers' : ['a hundred'],
+        'answers' : ['a hundred', '100'],
         'group' : 'Nums',
     
         'englatmast' : 0,
@@ -3966,7 +3966,7 @@ var Eduqas = [
     {
         '1stpp' :'decem',
         '2,3,4pp' : 'indecl',
-        'answers' : ['ten'],
+        'answers' : ['ten', '10'],
         'group' : 'Nums',
     
         'englatmast' : 0,
@@ -3975,7 +3975,7 @@ var Eduqas = [
     {
         '1stpp' :'duo',
         '2,3,4pp' : 'duae, duo',
-        'answers' : ['two'],
+        'answers' : ['two', '2'],
         'group' : 'Nums',
     
         'englatmast' : 0,
@@ -3984,7 +3984,7 @@ var Eduqas = [
     {
         '1stpp' :'mille',
         '2,3,4pp' : 'pl = milia',
-        'answers' : ['thousand'],
+        'answers' : ['thousand', '1000'],
         'group' : 'Nums',
     
         'englatmast' : 0,
@@ -3993,7 +3993,7 @@ var Eduqas = [
     {
         '1stpp' :'novem',
         '2,3,4pp' : 'indecl',
-        'answers' : ['nine'],
+        'answers' : ['nine', '9'],
         'group' : 'Nums',
     
         'englatmast' : 0,
@@ -4002,7 +4002,7 @@ var Eduqas = [
     {
         '1stpp' :'octo',
         '2,3,4pp' : 'indecl',
-        'answers' : ['eight'],
+        'answers' : ['eight', '8'],
         'group' : 'Nums',
     
         'englatmast' : 0,
@@ -4011,7 +4011,7 @@ var Eduqas = [
     {
         '1stpp' :'quattuor',
         '2,3,4pp' : 'indecl',
-        'answers' : ['four'],
+        'answers' : ['four', '4'],
         'group' : 'Nums',
     
         'englatmast' : 0,
@@ -4020,7 +4020,7 @@ var Eduqas = [
     {
         '1stpp' :'quinque',
         '2,3,4pp' : 'indecl',
-        'answers' : ['five'],
+        'answers' : ['five', '5'],
         'group' : 'Nums',
     
         'englatmast' : 0,
@@ -4029,7 +4029,7 @@ var Eduqas = [
     {
         '1stpp' :'septem',
         '2,3,4pp' : 'indecl',
-        'answers' : ['seven'],
+        'answers' : ['seven', '7'],
         'group' : 'Nums',
     
         'englatmast' : 0,
@@ -4038,7 +4038,7 @@ var Eduqas = [
     {
         '1stpp' :'sex',
         '2,3,4pp' : 'indecl',
-        'answers' : ['six'],
+        'answers' : ['six', '6'],
         'group' : 'Nums',
     
         'englatmast' : 0,
@@ -4047,7 +4047,7 @@ var Eduqas = [
     {
         '1stpp' :'tres',
         '2,3,4pp' : 'tria',
-        'answers' : ['three'],
+        'answers' : ['three', '3'],
         'group' : 'Nums',
     
         'englatmast' : 0,
@@ -4056,7 +4056,7 @@ var Eduqas = [
     {
         '1stpp' :'unus',
         '2,3,4pp' : 'una, unum',
-        'answers' : ['one'],
+        'answers' : ['one', '1'],
         'group' : 'Nums',
     
         'englatmast' : 0,
@@ -4065,6 +4065,11 @@ var Eduqas = [
   ];
 
 var WantedVocab = [];
+
+function UpdateIncorrect() {
+    const IncorrectSect = document.getElementById('Incorrect');
+    IncorrectSect.innerHTML = Incorrect
+}
 
 //Following two functions wait until enter is pressed to continue and then get the value from the textbox - do not know how they work exactly
 function waitingKeypress() {
@@ -4083,19 +4088,27 @@ async function GetUserInput() {
     const textbox = document.getElementById('textbox');
     textbox.value = "";
     await waitingKeypress();
-
     //Gets the textbox element
     UserAnswer = document.getElementById('textbox').value.toLowerCase().trim();
     textbox.value = ""; // Clear the textbox after getting the value
 }
 
+function UpdateProgressBar() {
+    const progressBar = document.getElementsByClassName('w3-progressbar')[0]; //Needs 0 as getElementsByClassName returns an array
+    const Progress = document.getElementById('Progress');
+    progressBar.style.width = `${(TotalQs/WantedVocab.length)*100}%`;
+    Progress.innerHTML = `${TotalQs}/${WantedVocab.length}`;
+}
+
 //Apparently using async and await makes it so that the function waits until the user has inputted something before continuing
 async function CheckAnswer(currentValue) {
-    const textbox = document.getElementById('textbox');
-    document.getElementById('Info').innerHTML="";
+    UpdateProgressBar();
+    //UpdateIncorrect();
+    Info = document.getElementById('Info');
+    Info.innerHTML="";
     i = currentValue;
-    Question = i[0];
-    CorrectAnswer = i[1];
+    Question = i[0]
+    CorrectAnswer = i[1]; 
     if (Array.isArray(Question)) {
     Question = Question.join(",");
     }
@@ -4103,40 +4116,43 @@ async function CheckAnswer(currentValue) {
     document.getElementById('Prompt').innerHTML=Question.toUpperCase();
     await GetUserInput();
     if (UserAnswer == "skip" || UserAnswer == "") {
-        document.getElementById('Info').innerHTML=`Answer(s): ${CorrectAnswer.join(", ")}`;
         if (englat == "0") {
+            Info.innerHTML = `Answer(s): ${CorrectAnswer.join(", ")}`;
             Incorrect.push([Question, " ----- ", CorrectAnswer.join(", ")]);
         } else {
+            Info.innerHTML = `Answer(s): ${CorrectAnswer}`;
             Incorrect.push([Question, " ----- ", CorrectAnswer]);
         }
     } else {
         if (Array.isArray(CorrectAnswer)) {
-        if (CorrectAnswer.includes(UserAnswer)) {
-            //Makes it show you other correct answers if there are any
-            if (CorrectAnswer.length == 1) {
-                document.getElementById('Info').innerHTML="That was correct! Well done!";
+            if (CorrectAnswer.includes(UserAnswer)) {
+                //Makes it show you other correct answers if there are any
+                if (CorrectAnswer.length == 1) {
+                    Info.innerHTML="That was correct! Well done!";
+                } else {
+                    Info.innerHTML=`That was correct! Well done! Other possible answers include: ${CorrectAnswer.slice(0, CorrectAnswer.indexOf(UserAnswer))} ${CorrectAnswer.slice(CorrectAnswer.indexOf(UserAnswer)+1)}`;
+                }
+                mark += 1;
+                ToRemove.push(i);
             } else {
-                document.getElementById('Info').innerHTML=`That was correct! Well done! Other possible answers include: ${CorrectAnswer.slice(0, CorrectAnswer.indexOf(UserAnswer))} ${CorrectAnswer.slice(CorrectAnswer.indexOf(UserAnswer)+1)}`;
+                Info.innerHTML="Unlucky, but that was the wrong answer. Here is the correct answer:" + CorrectAnswer;
+                Incorrect.push([Question, " ----- ", CorrectAnswer.join(", ")]); // This is new - does it work? Could it be made into a function? --> Would need to change depending on englat
+                }
+        } else {
+            if (UserAnswer == CorrectAnswer || UserAnswer == CorrectAnswer.slice(0,CorrectAnswer.indexOf(","))) {
+                Info.innerHTML="That was correct! Well done!";
+                mark += 1;
+                ToRemove.push(i);
+            } else {
+                Info.innerHTML="Unlucky, but that was the wrong answer. Here is the correct answer:" + CorrectAnswer;
+                Incorrect.push([Question + "-----" + CorrectAnswer]); // This is new - does it work? Could it be made into a function? --> Would need to change depending on englat
             }
-            mark += 1;
-            ToRemove.push(i);
-        } else {
-            document.getElementById('Info').innerHTML="Unlucky, but that was the wrong answer. Here is the correct answer:" + CorrectAnswer;
-            Incorrect.push([Question, " ----- ", CorrectAnswer.join(", ")]); // This is new - does it work? Could it be made into a function? --> Would need to change depending on englat
-            }
-        } else {
-        if (UserAnswer == CorrectAnswer || UserAnswer == CorrectAnswer.slice(0,CorrectAnswer.indexOf(","))) {
-            document.getElementById('Info').innerHTML="That was correct! Well done!";
-            mark += 1;
-            ToRemove.push(i);
-        } else {
-            document.getElementById('Info').innerHTML="Unlucky, but that was the wrong answer. Here is the correct answer:" + CorrectAnswer;
-            Incorrect.push([Question + "-----" + CorrectAnswer]); // This is new - does it work? Could it be made into a function? --> Would need to change depending on englat
-        }
         }
         }
         TotalQs += 1;
         await waitingKeypress();
+        UpdateProgressBar();
+        //UpdateIncorrect();
 } 
 
 function AddToWantedVocab(properties, answers, indexOf) {
@@ -4188,13 +4204,12 @@ async function GameLoop() {
     Incorrect = [];
     ToRemove = [];
     shuffle(WantedVocab);
-    //WantedVocab.forEach(CheckAnswer);
     for (i of WantedVocab) {
         await CheckAnswer(i);
     }
-    document.getElementById('Info').innerHTML=`Score: ${mark}/${TotalQs}<br>`;
+    Info.innerHTML=`Score: ${mark}/${TotalQs}<br>`;
     if (mark != TotalQs) {
-        document.getElementById('Info').innerHTML+=`The word(s) you got incorrect, along with their answers, were:<br>${Incorrect.join("<br>")}`;
+        Info.innerHTML+=`The word(s) you got incorrect, along with their answers, were:<br>${Incorrect.join("<br>")}`;
     }
     //Make it so that after the test, you can redo it with only the ones you got wrong
     document.getElementById('Prompt').innerHTML="Would you like to retest with: <br>The previous vocab (say 1), <br>Incorrect vocab (say 2) <br>Different vocab (say 3)?";//, or the original vocab (say '4')?
@@ -4221,3 +4236,15 @@ async function GameLoop() {
         //GameLoop();
     //}
 }
+
+//Create a login and register system
+//This system will allow users to track their scores over time, use mastery, use an algorithm to come up with personalised tests.
+//It could also allow users to create their own vocab lists and share them with others.
+//They could create vocab presets personalised for them
+//It could help advise them for revision based on their performance
+//It could also have a spaced repetition system built in
+//Learn, Revise and Test features could be built in
+//People would have to be advised not to use the same passwords as they use for other school accounts as this could create a security risk if I could access them
+//Similar to SmartRevise it could have a flight path and suggested revision along that path based on their performance
+
+//Add a derivation tester and tips to remeber the answers to words
