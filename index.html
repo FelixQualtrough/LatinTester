@@ -63,7 +63,18 @@
     <button onclick = "BeginTest(); AddVocab(); GameLoop()"><strong>Test!</strong></button>
     </section>
 
+    <!--<div id="incorrect">
+        <h3>Incorrect Answers</h3>
+    </div>
+    -->
     <div id = "Test" class = "Test" style="display: none;">
+        <div id = "ProgressDiv">
+            <!-- Progress bar - I am not entirely sure how it works, got it from internet -->
+            <div class="w3-progress-container w3-round-xlarge">
+                <div class="w3-progressbar w3-round-xlarge"></div>
+            </div>
+            <h3 id = "Progress"></h3>
+        </div>
         <h4 id = "Prompt"></h4>
         <input id = "textbox" type="text" placeholder="Enter Answer..." autocomplete="off">
         <div id = "Buttons">
