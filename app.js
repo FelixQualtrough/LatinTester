@@ -4222,7 +4222,7 @@ async function GameLoop() {
         GameLoop();
     } else if (UserAnswer == '2') {
         //Only incorrect vocab
-        WantedVocab = WantedVocab.filter((el) => !ToRemove.includes(el)); //Filters out the correct answers from the array - Check if this works
+        WantedVocab = WantedVocab.filter((el) => !ToRemove.includes(el)); //Filters out the correct answers from the array - Check why this works
         GameLoop()
     } else if (UserAnswer == '3') {
         //Different vocab
