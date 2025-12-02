@@ -15,40 +15,40 @@
     <section id = "Choosing">
     <div class = "VocabChoice">
         <div class = "AllVocab">
-        <input type = "checkbox" onCLick = "All(this)">All Vocab
+        <input id = "AllVocab" type = "checkbox" onCLick = "All(this)"><label for="AllVocab">All Vocab</label>
         </div>
         <div class = "OtherVocab">
         <ul>
-            <li><input type = "checkbox" class = "Vocab" onCLick = "toggle(this, 'Nouns')">Nouns (All)</li>
-            <li><input type = "checkbox" class = "Vocab" id = "nouns1" name = "Nouns">Nouns 1</li>
-            <li><input type = "checkbox" class = "Vocab" id = "nouns2" name = "Nouns">Nouns 2</li>
-            <li><input type = "checkbox" class = "Vocab" id = "nouns3" name = "Nouns">Nouns 3</li>
-            <li><input type = "checkbox" class = "Vocab" id = "nouns4" name = "Nouns">Nouns 4</li>
-            <li><input type = "checkbox" class = "Vocab" id = "nouns5" name = "Nouns">Nouns 5</li>
+            <li><input type = "checkbox" class = "Vocab" id = "nounsAll" onCLick = "toggle(this, 'Nouns')"><label for="nounsAll">Nouns (All)</label></li>
+            <li><input type = "checkbox" class = "Vocab" id = "nouns1" name = "Nouns"><label for="nouns1">Nouns 1</label></li>
+            <li><input type = "checkbox" class = "Vocab" id = "nouns2" name = "Nouns"><label for="nouns2">Nouns 2</label></li>
+            <li><input type = "checkbox" class = "Vocab" id = "nouns3" name = "Nouns"><label for="nouns3">Nouns 3</label></li>
+            <li><input type = "checkbox" class = "Vocab" id = "nouns4" name = "Nouns"><label for="nouns4">Nouns 4</label></li>
+            <li><input type = "checkbox" class = "Vocab" id = "nouns5" name = "Nouns"><label for="nouns5">Nouns 5</label></li>
         </ul>
         <ul>
-            <li><input type = "checkbox" class = "Vocab" onCLick = "toggle(this, 'Verbs')">Verbs (All)</li>
-            <li><input type = "checkbox" class = "Vocab" id = "verbs1" name = "Verbs">Verbs 1</li>
-            <li><input type = "checkbox" class = "Vocab" id = "verbs2" name = "Verbs">Verbs 2</li>
-            <li><input type = "checkbox" class = "Vocab" id = "verbs3" name = "Verbs">Verbs 3</li>
-            <li><input type = "checkbox" class = "Vocab" id = "verbs4" name = "Verbs">Verbs 4</li>
-            <li><input type = "checkbox" class = "Vocab" id = "IrregVerbs" name = "Verbs">Irregular Verbs</li>
-            <li><input type = "checkbox" class = "Vocab" id = "DepVerbs" name = "Verbs">Deponent Verbs</li>
+            <li><input type = "checkbox" class = "Vocab" id = "verbsAll" onCLick = "toggle(this, 'Verbs')"><label for="verbsAll">Verbs (All)</label></li>
+            <li><input type = "checkbox" class = "Vocab" id = "verbs1" name = "Verbs"><label for="verbs1">Verbs 1</label></li>
+            <li><input type = "checkbox" class = "Vocab" id = "verbs2" name = "Verbs"><label for="verbs2">Verbs 2</label></li>
+            <li><input type = "checkbox" class = "Vocab" id = "verbs3" name = "Verbs"><label for="verbs3">Verbs 3</label></li>
+            <li><input type = "checkbox" class = "Vocab" id = "verbs4" name = "Verbs"><label for="verbs4">Verbs 4</label></li>
+            <li><input type = "checkbox" class = "Vocab" id = "IrregVerbs" name = "Verbs"><label for="IrregVerbs">Irregular Verbs</label></li>
+            <li><input type = "checkbox" class = "Vocab" id = "DepVerbs" name = "Verbs"><label for="DepVerbs">Deponent Verbs</label></li>
         </ul>
         <ul>
-            <li><input type = "checkbox" class = "Vocab" onCLick = "toggle(this, 'Adjectives')">Adjectives (All)</li>
-            <li><input type = "checkbox" class = "Vocab" id = "212Adj" name = "Adjectives">Regular 2-1-2 Adjectives</li>
-            <li><input type = "checkbox" class = "Vocab" id = "33Adj" name = "Adjectives">Regular 3-3 Adjectives</li>
-            <li><input type = "checkbox" class = "Vocab" id = "IrregCompAdj" name = "Adjectives">Irregular Comparative Adjectives</li>
+            <li><input type = "checkbox" class = "Vocab" id = "adjAll" onCLick = "toggle(this, 'Adjectives')"><label for="adjAll">Adjectives (All)</label></li>
+            <li><input type = "checkbox" class = "Vocab" id = "212Adj" name = "Adjectives"><label for="212Adj">Regular 2-1-2 Adjectives</label></li>
+            <li><input type = "checkbox" class = "Vocab" id = "33Adj" name = "Adjectives"><label for="33Adj">Regular 3-3 Adjectives</label></li>
+            <li><input type = "checkbox" class = "Vocab" id = "IrregCompAdj" name = "Adjectives"><label for="IrregCompAdj">Irregular Comparative Adjectives</label></li>
         </ul>
         <ul>
-            <li><input type = "checkbox" class = "Vocab" onCLick = "toggle(this, 'Others')">Others (All)</li>
-            <li><input type = "checkbox" class = "Vocab" id = "Adverbs" name = "Others">Adverbs</li>
-            <li><input type = "checkbox" class = "Vocab" id = "Pronouns" name = "Others">Pronouns</li>
-            <li><input type = "checkbox" class = "Vocab" id = "Prepositions" name = "Others">Prepositions</li>
-            <li><input type = "checkbox" class = "Vocab" id = "Conjunctions" name = "Others">Conjunctions</li>
-            <li><input type = "checkbox" class = "Vocab" id = "Misc" name = "Others">Miscellaneous</li>
-            <li><input type = "checkbox" class = "Vocab" id = "Nums" name = "Others">Numerals</li>
+            <li><input type = "checkbox" class = "Vocab" id = "otherAll" onCLick = "toggle(this, 'Others')"><label for="otherAll">Others (All)</label></li>
+            <li><input type = "checkbox" class = "Vocab" id = "Adverbs" name = "Others"><label for="Adverbs">Adverbs</label></li>
+            <li><input type = "checkbox" class = "Vocab" id = "Pronouns" name = "Others"><label for="Pronouns">Pronouns</label></li>
+            <li><input type = "checkbox" class = "Vocab" id = "Prepositions" name = "Others"><label for="Prepositions">Prepositions</label></li>
+            <li><input type = "checkbox" class = "Vocab" id = "Conjunctions" name = "Others"><label for="Conjunctions">Conjunctions</label></li>
+            <li><input type = "checkbox" class = "Vocab" id = "Misc" name = "Others"><label for="Misc">Miscellaneous</label></li>
+            <li><input type = "checkbox" class = "Vocab" id = "Nums" name = "Others"><label for="Nums">Numerals</label></li>
         </ul>
         </div>
     </div>
@@ -58,15 +58,10 @@
         <label><h4>Latin to English</h4></label><br>
         <input type="radio" name="EngLat">
         <label><h4>English to Latin</h4></label><br>
+        <button onclick = "BeginTest(); AddVocab(); GameLoop()"><strong>Test!</strong></button>
     </div>
-
-    <button onclick = "BeginTest(); AddVocab(); GameLoop()"><strong>Test!</strong></button>
     </section>
 
-    <!--<div id="incorrect">
-        <h3>Incorrect Answers</h3>
-    </div>
-    -->
     <div id = "Test" class = "Test" style="display: none;">
         <div id = "ProgressDiv">
             <!-- Progress bar - I am not entirely sure how it works, got it from internet -->
@@ -81,7 +76,7 @@
             <button style="display: none;">Reveal</button>
             <button style="display: none;">Submit</button>
         </div>
-        <h3 id ="Info"></h3>
+        <h3 class ="Info" id = "Info"></h3>
     </div>
 </body>
 </html>
