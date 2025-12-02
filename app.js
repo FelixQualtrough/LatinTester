@@ -4066,11 +4066,6 @@ var Eduqas = [
 
 var WantedVocab = [];
 
-function UpdateIncorrect() {
-    const IncorrectSect = document.getElementById('Incorrect');
-    IncorrectSect.innerHTML = Incorrect
-}
-
 //Following two functions wait until enter is pressed to continue and then get the value from the textbox - do not know how they work exactly
 function waitingKeypress() {
     return new Promise((resolve) => {
@@ -4103,12 +4098,11 @@ function UpdateProgressBar() {
 //Apparently using async and await makes it so that the function waits until the user has inputted something before continuing
 async function CheckAnswer(currentValue) {
     UpdateProgressBar();
-    //UpdateIncorrect();
     Info = document.getElementById('Info');
     Info.innerHTML="";
     i = currentValue;
     Question = i[0]
-    CorrectAnswer = i[1]; 
+    CorrectAnswer = i[1];
     if (Array.isArray(Question)) {
     Question = Question.join(",");
     }
@@ -4152,7 +4146,6 @@ async function CheckAnswer(currentValue) {
         TotalQs += 1;
         await waitingKeypress();
         UpdateProgressBar();
-        //UpdateIncorrect();
 } 
 
 function AddToWantedVocab(properties, answers, indexOf) {
@@ -4199,6 +4192,9 @@ function BeginTest() {
 }
 
 async function GameLoop() {
+    const ProgressDiv = document.getElementById('ProgressDiv');
+    //Shows progress bar div
+    ProgressDiv.style.display = "block";
     TotalQs = 0;
     mark = 0;
     Incorrect = [];
@@ -4207,6 +4203,9 @@ async function GameLoop() {
     for (i of WantedVocab) {
         await CheckAnswer(i);
     }
+    //Hides progress bar div
+    ProgressDiv.style.display = "none";
+
     Info.innerHTML=`Score: ${mark}/${TotalQs}<br>`;
     if (mark != TotalQs) {
         Info.innerHTML+=`The word(s) you got incorrect, along with their answers, were:<br>${Incorrect.join("<br>")}`;
@@ -4223,9 +4222,7 @@ async function GameLoop() {
         GameLoop();
     } else if (UserAnswer == '2') {
         //Only incorrect vocab
-        for (i of ToRemove.reverse()) {
-           WantedVocab.splice(i, 1);
-        }
+        WantedVocab = WantedVocab.filter((el) => !ToRemove.includes(el)); //Filters out the correct answers from the array - Check if this works
         GameLoop()
     } else if (UserAnswer == '3') {
         //Different vocab
@@ -4247,4 +4244,5 @@ async function GameLoop() {
 //People would have to be advised not to use the same passwords as they use for other school accounts as this could create a security risk if I could access them
 //Similar to SmartRevise it could have a flight path and suggested revision along that path based on their performance
 
-//Add a derivation tester and tips to remeber the answers to words
+//Add a derivation tester and tips to remember the answers to words
+//Add a way for users to provide user feedback or raise queries within the website
