@@ -20,34 +20,80 @@ body {
 }
 
 input.VocabChoice {
-    background-color: orange;
+    background-color: orange;   
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
+.AllVocab {
+    text-align: center;
+    width: 100px;
+    margin: 20px auto 0 auto;
+    font-weight: bold;
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+
+.OtherVocab li, .AllVocab {
+    border: 1px solid black;
+    background-color: #d8bfd8;
+}
+
+.OtherVocab li:hover, .AllVocab:hover {
+    background-color: #dda0dd;
+}
+
+.OtherVocab li:has(input[type="checkbox"]:checked) label, .AllVocab:has(input[type="checkbox"]:checked) label{
+    background-color: rgb(213, 106, 213);
+    color: white;
+}
+
+.OtherVocab ul > li:first-child, .OtherVocab ul > li:first-child label {
+    font-weight: bold;
+    filter: brightness(85%);
+    border-radius: 7px 7px 0 0;
+    border-bottom: 2px solid black;
+}
+
+.OtherVocab ul > li:last-child {
+    border-radius: 0 0 7px 7px;
+}
+
+/*Hides the checkbox elements*/
+.OtherVocab input[type="checkbox"], .AllVocab input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none; /* For Safari */
+    display: none;
+}
+
+.OtherVocab li label, .AllVocab label {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.AllVocab label {
+    border-radius: 7px;
+}
+
 ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin: 15px 0px 15px 0px;
 }
 
 div.VocabChoice {
-    background-color: lightslategray;
     display: flex;
     flex-direction: column;
 }
 
 div.VocabChoice ul {
     padding: 5px 15px 5px 15px;
-}
-
-div.AllVocab {
-    background-color: lightgray;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
 }
 
 div.OtherVocab {
@@ -66,16 +112,16 @@ button {
     font-size: 30px;
 }
 
-section button {
+.OtherInputs button {
     position: absolute;
-    top: 230%;
+    top: 100%;
     left: 50%;
     transform: translate(-50%, -0%);
 }
 
 div.OtherInputs {
     position: absolute;
-    top: 180%;
+    top: 130%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: inline-block;
@@ -136,7 +182,7 @@ div.Test input {
     margin-top: 20px;
 }
 
-.Test.Info {
+.Test .Info {
     width: 400px;
     height: 200px;
     overflow-y: auto;
@@ -157,4 +203,3 @@ div.Test input {
 .ProgressDiv {
     display: inline-block;
 }
-
