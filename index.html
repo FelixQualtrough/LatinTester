@@ -10,9 +10,9 @@
 </head>
 <body>
     <header>
-        <h1>Latin Tester Eduqas - Prototype</h1>
+        <h1>Latin Tester - Eduqas GCSE</h1>
     </header>
-    <section id = "Choosing">
+    <section id="Choosing">
     <div class = "VocabChoice">
         <div class = "AllVocab">
         <input id = "AllVocab" type = "checkbox" onCLick = "All(this)"><label for="AllVocab">All Vocab</label>
@@ -44,7 +44,7 @@
         <ul>
             <li><input type = "checkbox" class = "Vocab" id = "otherAll" onCLick = "toggle(this, 'Others')"><label for="otherAll">Others (All)</label></li>
             <li><input type = "checkbox" class = "Vocab" id = "Adverbs" name = "Others"><label for="Adverbs">Adverbs</label></li>
-            <li><input type = "checkbox" class = "Vocab" id = "Pronouns" name = "Others"><label for="Pronouns">Pronouns</label></li>
+            <li><input type = "checkbox" class = "Vocab" id = "ProNouns" name = "Others"><label for="ProNouns">Pronouns</label></li>
             <li><input type = "checkbox" class = "Vocab" id = "Prepositions" name = "Others"><label for="Prepositions">Prepositions</label></li>
             <li><input type = "checkbox" class = "Vocab" id = "Conjunctions" name = "Others"><label for="Conjunctions">Conjunctions</label></li>
             <li><input type = "checkbox" class = "Vocab" id = "Misc" name = "Others"><label for="Misc">Miscellaneous</label></li>
@@ -54,21 +54,28 @@
     </div>
 
     <div class = "OtherInputs">
-        <input type="radio" name="EngLat" checked>
-        <label><h4>Latin to English</h4></label><br>
-        <input type="radio" name="EngLat">
-        <label><h4>English to Latin</h4></label><br>
-        <button onclick = "BeginTest(); AddVocab(); GameLoop()"><strong>Test!</strong></button>
+        <span>
+        <input type="radio" name="EngLat" id = "LE" checked>
+        <label for = "LE"><h4>Latin to English</h4></label><br>
+        </span>
+        <span>
+        <input type="radio" name="EngLat" id = "EL">
+        <label for = "EL"><h4>English to Latin</h4></label>
+        </span>
+        <button onclick = "BeginTest()"><strong>Test!</strong></button>
     </div>
     </section>
 
     <div id = "Test" class = "Test" style="display: none;">
+        <div id = "AboveBar">
+            <div id = "Score"></div>
+            <div id = "Progress"></div>
+        </div>
         <div id = "ProgressDiv">
             <!-- Progress bar - I am not entirely sure how it works, got it from internet -->
             <div class="w3-progress-container w3-round-xlarge">
                 <div class="w3-progressbar w3-round-xlarge"></div>
             </div>
-            <h3 id = "Progress"></h3>
         </div>
         <h4 id = "Prompt"></h4>
         <input id = "textbox" type="text" placeholder="Enter Answer..." autocomplete="off">
@@ -77,6 +84,7 @@
             <button style="display: none;">Submit</button>
         </div>
         <h3 class ="Info" id = "Info"></h3>
+        <h3 class ="Incorrect" id = "Incorrect"></h3>
     </div>
 </body>
 </html>
