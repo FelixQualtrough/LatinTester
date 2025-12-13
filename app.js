@@ -43,10 +43,6 @@ class IrregVerb extends Word {
         super(answers, group, englatmast, latengmast, extraInfo);
     }
 }     
-// Types of words:
-// Adjectives(Regular 2-1-2 adjectives, Regular 3-3 adjectives, Irregular comparative adjectives)
-// Adverbs (mostly indeclinable, some not), Pronouns, Prepositions, Conjuctions (all indeclinable), Misc, Numerals
-
 
 var Eduqas = [
     Noun('ancilla', 'ancillae', 'f', ['slave-girl','maid'], '1', 0, 0, 'None'),
@@ -81,44 +77,6 @@ var Eduqas = [
 
 var englat = 0; //1 for Eng to Lat, 0 for Lat to Eng
 var selectedVocab = [];
-        function toggle(source, name) {
-            checkboxes = document.getElementsByName(name);
-            for(var i=0, n=checkboxes.length;i<n;i++) {
-                checkboxes[i].checked = source.checked;
-            }
-        }
-
-        function All(source) {
-            checkboxes = document.getElementsByClassName('Vocab');
-            for(var i=0, n=checkboxes.length;i<n;i++) {
-                checkboxes[i].checked = source.checked;
-            }
-        }
-
-        function EngLat(id) {
-        for (var i = 1;i <= 2; i++) {
-            document.getElementById("Check" + i).checked = false;
-        }
-        document.getElementById(id).checked = true;
-}
-
-//Shuffling algorithm - Fisher-Yates Shuffle (I have no idea how it works)
-function shuffle(array) {
-    let currentIndex = array.length;
-  
-    // While there remain elements to shuffle...
-    while (currentIndex != 0) {
-  
-      // Pick a remaining element...
-      let randomIndex = Math.floor(Math.random() * currentIndex);
-      currentIndex--;
-  
-      // And swap it with the current element.
-      [array[currentIndex], array[randomIndex]] = [
-        array[randomIndex], array[currentIndex]];
-    }
-  }
-
 var Eduqas = [
     {
         'nominative' :'ancilla',
@@ -3373,7 +3331,7 @@ var Eduqas = [
         '1stpp' :'aliquis',
         '2,3,4pp' : 'aliquid',
         'answers' : ['someone','something'],
-        'group' : 'Pronouns',
+        'group' : 'ProNouns',
     
         'englatmast' : 0,
         'latengmast' : 1
@@ -3382,7 +3340,7 @@ var Eduqas = [
         '1stpp' :'alius',
         '2,3,4pp' : 'alia, aliud',
         'answers' : ['other','another','else'],
-        'group' : 'Pronouns',
+        'group' : 'ProNouns',
     
         'englatmast' : 0,
         'latengmast' : 1
@@ -3391,7 +3349,7 @@ var Eduqas = [
         '1stpp' :'alter',
         '2,3,4pp' : 'altera, alterum',
         'answers' : ['the other','another','the second of two'],
-        'group' : 'Pronouns',
+        'group' : 'ProNouns',
     
         'englatmast' : 0,
         'latengmast' : 1
@@ -3400,7 +3358,7 @@ var Eduqas = [
         '1stpp' :'ego',
         '2,3,4pp' : 'mei',
         'answers' : ['I','me'],
-        'group' : 'Pronouns',
+        'group' : 'ProNouns',
     
         'englatmast' : 0,
         'latengmast' : 1
@@ -3409,7 +3367,7 @@ var Eduqas = [
         '1stpp' :'hic',
         '2,3,4pp' : 'haec, hoc',
         'answers' : ['this'],
-        'group' : 'Pronouns',
+        'group' : 'ProNouns',
     
         'englatmast' : 0,
         'latengmast' : 1
@@ -3418,7 +3376,7 @@ var Eduqas = [
         '1stpp' :'ille',
         '2,3,4pp' : 'illa, illud',
         'answers' : ['that','he','she','it'],
-        'group' : 'Pronouns',
+        'group' : 'ProNouns',
     
         'englatmast' : 0,
         'latengmast' : 1
@@ -3427,7 +3385,7 @@ var Eduqas = [
         '1stpp' :'is',
         '2,3,4pp' : 'ea, id',
         'answers' : ['this','that','he','she','it','them'],
-        'group' : 'Pronouns',
+        'group' : 'ProNouns',
     
         'englatmast' : 0,
         'latengmast' : 1
@@ -3436,7 +3394,7 @@ var Eduqas = [
         '1stpp' :'meus',
         '2,3,4pp' : 'mea, meum',
         'answers' : ['my'],
-        'group' : 'Pronouns',
+        'group' : 'ProNouns',
     
         'englatmast' : 0,
         'latengmast' : 1
@@ -3445,7 +3403,7 @@ var Eduqas = [
         '1stpp' :'nos',
         '2,3,4pp' : 'nostrum',
         'answers' : ['we','us'],
-        'group' : 'Pronouns',
+        'group' : 'ProNouns',
     
         'englatmast' : 0,
         'latengmast' : 1
@@ -3454,7 +3412,7 @@ var Eduqas = [
         '1stpp' :'noster',
         '2,3,4pp' : 'nostra, nostrum',
         'answers' : ['our'],
-        'group' : 'Pronouns',
+        'group' : 'ProNouns',
     
         'englatmast' : 0,
         'latengmast' : 1
@@ -3463,7 +3421,7 @@ var Eduqas = [
         '1stpp' :'qui',
         '2,3,4pp' : 'quae, quod',
         'answers' : ['who','which'],
-        'group' : 'Pronouns',
+        'group' : 'ProNouns',
     
         'englatmast' : 0,
         'latengmast' : 1
@@ -3472,7 +3430,7 @@ var Eduqas = [
         '1stpp' :'se',
         '2,3,4pp' : 'sui',
         'answers' : ['himself','herself','itself','themselves'],
-        'group' : 'Pronouns',
+        'group' : 'ProNouns',
     
         'englatmast' : 0,
         'latengmast' : 1
@@ -3481,7 +3439,7 @@ var Eduqas = [
         '1stpp' :'suus',
         '2,3,4pp' : 'sua, suum',
         'answers' : ['his','her','its','their (own)'],
-        'group' : 'Pronouns',
+        'group' : 'ProNouns',
     
         'englatmast' : 0,
         'latengmast' : 1
@@ -3490,7 +3448,7 @@ var Eduqas = [
         '1stpp' :'tu',
         '2,3,4pp' : 'tui',
         'answers' : ['you (singular)', 'you singular', 'you (sg)', 'you sg', 'you'],
-        'group' : 'Pronouns',
+        'group' : 'ProNouns',
     
         'englatmast' : 0,
         'latengmast' : 1
@@ -3499,7 +3457,7 @@ var Eduqas = [
         '1stpp' :'tuus',
         '2,3,4pp' : 'tua, tuum',
         'answers' : ['your (singular)','yours', 'your', 'your (sg)', 'yours (sg)'],
-        'group' : 'Pronouns',
+        'group' : 'ProNouns',
     
         'englatmast' : 0,
         'latengmast' : 1
@@ -3508,7 +3466,7 @@ var Eduqas = [
         '1stpp' :'vester',
         '2,3,4pp' : 'vestra, vestrum',
         'answers' : ['your (plural)','yours', 'your (pl)', 'yours (pl)', 'yours (plural)'],
-        'group' : 'Pronouns',
+        'group' : 'ProNouns',
     
         'englatmast' : 0,
         'latengmast' : 1
@@ -3517,7 +3475,7 @@ var Eduqas = [
         '1stpp' :'vos',
         '2,3,4pp' : 'vestrum',
         'answers' : ['you (plural)', 'you plural', 'you (pl)', 'you pl'],
-        'group' : 'Pronouns',
+        'group' : 'ProNouns',
     
         'englatmast' : 0,
         'latengmast' : 1
@@ -3928,6 +3886,249 @@ var Eduqas = [
         'latengmast' : 1
     },
     {
+        '1stpp' :'ac, atque',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['and'],
+        'group' : 'Conjunctions',
+
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'aut… aut',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['either… or'],
+        'group' : 'Conjunctions',
+
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'deinde',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['then'],
+        'group' : 'Conjunctions',
+
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'dum',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['while'],
+        'group' : 'Conjunctions',
+
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'enim',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['for'],
+        'group' : 'Conjunctions',
+
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'et',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['and'],
+        'group' : 'Conjunctions',
+
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'etiam',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['also','even'],
+        'group' : 'Conjunctions',
+
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'igitur',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['therefore','and so'],
+        'group' : 'Conjunctions',
+
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'iterum',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['again'],
+        'group' : 'Conjunctions',
+
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'nam',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['for'],
+        'group' : 'Conjunctions',
+
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'ne',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['that… not','so that… not'],
+        'group' : 'Conjunctions',
+
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'-ne (added to end of word)',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['introduces question'],
+        'group' : 'Conjunctions',
+
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'nec… nec',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['neither…nor'],
+        'group' : 'Conjunctions',
+
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'neque… neque',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['neither…nor'],
+        'group' : 'Conjunctions',
+
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'non',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['not'],
+        'group' : 'Conjunctions',
+
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'nonne?',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['surely?'],
+        'group' : 'Conjunctions',
+
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'num',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['whether'],
+        'group' : 'Conjunctions',
+
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'num?',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['surely… not?'],
+        'group' : 'Conjunctions',
+
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'quamquam',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['although'],
+        'group' : 'Conjunctions',
+
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'-que (added to end of word)',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['and'],
+        'group' : 'Conjunctions',
+
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'quod',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['because'],
+        'group' : 'Conjunctions',
+
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'quoque',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['also'],
+        'group' : 'Conjunctions',
+
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'sed',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['but'],
+        'group' : 'Conjunctions',
+
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'si',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['if'],
+        'group' : 'Conjunctions',
+
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'simulac, simulatque',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['as soon as'],
+        'group' : 'Conjunctions',
+
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'ut (+ subjunctive)',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['that','so that','in order that'],
+        'group' : 'Conjunctions',
+
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
+        '1stpp' :'ut (+ indicative)',
+        '2,3,4pp' : 'indecl',
+        'answers' : ['as'],
+        'group' : 'Conjunctions',
+
+        'englatmast' : 0,
+        'latengmast' : 1
+    },
+    {
         '1stpp' :'nemo',
         '2,3,4pp' : 'neminis',
         'answers' : ['no one','nobody'],
@@ -4064,6 +4265,44 @@ var Eduqas = [
     },
   ];
 
+function toggle(source, name) {
+    checkboxes = document.getElementsByName(name);
+    for(var i=0, n=checkboxes.length;i<n;i++) {
+        checkboxes[i].checked = source.checked;
+    }
+}
+
+function All(source) {
+    checkboxes = document.getElementsByClassName('Vocab');
+    for(var i=0, n=checkboxes.length;i<n;i++) {
+        checkboxes[i].checked = source.checked;
+    }
+}
+
+function EngLat(id) {
+    for (var i = 1;i <= 2; i++) {
+        document.getElementById("Check" + i).checked = false;
+    }
+    document.getElementById(id).checked = true;
+}
+
+//Shuffling algorithm - Fisher-Yates Shuffle (I have no idea how it works)
+function shuffle(array) {
+    let currentIndex = array.length;
+  
+    // While there remain elements to shuffle...
+    while (currentIndex != 0) {
+  
+      // Pick a remaining element...
+      let randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+  
+      // And swap it with the current element.
+      [array[currentIndex], array[randomIndex]] = [
+        array[randomIndex], array[currentIndex]];
+    }
+  }
+
 var WantedVocab = [];
 
 //Following two functions wait until enter is pressed to continue and then get the value from the textbox - do not know how they work exactly
@@ -4088,18 +4327,20 @@ async function GetUserInput() {
     textbox.value = ""; // Clear the textbox after getting the value
 }
 
-function UpdateProgressBar() {
+function UpdateProgressAndScore() {
     const progressBar = document.getElementsByClassName('w3-progressbar')[0]; //Needs 0 as getElementsByClassName returns an array
     const Progress = document.getElementById('Progress');
+    const Score = document.getElementById('Score');
     progressBar.style.width = `${(TotalQs/WantedVocab.length)*100}%`;
-    Progress.innerHTML = `${TotalQs}/${WantedVocab.length}`;
+    Progress.innerHTML = `Progress: ${TotalQs}/${WantedVocab.length}`;
+    Score.innerHTML = `Score: ${mark}/${TotalQs}`;
 }
 
 //Apparently using async and await makes it so that the function waits until the user has inputted something before continuing
 async function CheckAnswer(currentValue) {
-    UpdateProgressBar();
+    UpdateProgressAndScore();
     Info = document.getElementById('Info');
-    Info.innerHTML="";
+    Info.style.display="none";
     i = currentValue;
     Question = i[0]
     CorrectAnswer = i[1];
@@ -4109,6 +4350,7 @@ async function CheckAnswer(currentValue) {
     //Gives the prompt for the answer
     document.getElementById('Prompt').innerHTML=Question.toUpperCase();
     await GetUserInput();
+    Info.style.display="block";
     if (UserAnswer == "skip" || UserAnswer == "") {
         if (englat == "0") {
             Info.innerHTML = `Answer(s): ${CorrectAnswer.join(", ")}`;
@@ -4145,7 +4387,8 @@ async function CheckAnswer(currentValue) {
         }
         TotalQs += 1;
         await waitingKeypress();
-        UpdateProgressBar();
+        UpdateProgressAndScore();
+        Info.style.display="none";
 } 
 
 function AddToWantedVocab(properties, answers, indexOf) {
@@ -4172,27 +4415,10 @@ function AddVocab() {
 //I have tried .slice() to make a backup copy of the wanted vocab so that I can reset it later on as using const doesn't seem to work
 const WantedVocabBackup = WantedVocab
 
-function BeginTest() {
-    Choosing = document.getElementById('Choosing');
-    Choosing.style.display = 'none';
-    TestSect = document.getElementById('Test');
-    TestSect.style.display = 'block';
-    var checkboxes = document.getElementsByClassName('Vocab');
-    var englatRadios = document.getElementsByName('EngLat');
-    for (var i = 0; i < englatRadios.length; i++) {
-        if (englatRadios[i].checked) {
-            englat = i;
-        }
-    }
-    for (var i = 0; i < checkboxes.length; i++) {
-        if (checkboxes[i].checked) {
-            selectedVocab.push(checkboxes[i].id);
-        }
-    }
-}
-
 async function GameLoop() {
     const ProgressDiv = document.getElementById('ProgressDiv');
+    const IncorrectAnswersSect = document.getElementById('Incorrect');
+    IncorrectAnswersSect.style.display="none";
     //Shows progress bar div
     ProgressDiv.style.display = "block";
     TotalQs = 0;
@@ -4203,12 +4429,14 @@ async function GameLoop() {
     for (i of WantedVocab) {
         await CheckAnswer(i);
     }
-    //Hides progress bar div
-    ProgressDiv.style.display = "none";
-
-    Info.innerHTML=`Score: ${mark}/${TotalQs}<br>`;
+    Info.style.display="block";
     if (mark != TotalQs) {
-        Info.innerHTML+=`The word(s) you got incorrect, along with their answers, were:<br>${Incorrect.join("<br>")}`;
+        Info.innerHTML="The word(s) you got incorrect, along with their answers, were:";
+        IncorrectAnswersSect.style.display="block";
+        IncorrectAnswersSect.innerHTML = Incorrect.join("<br>");
+    }
+    else {
+        Info.innerHTML="Amazing! You got every question correct!";
     }
     //Make it so that after the test, you can redo it with only the ones you got wrong
     document.getElementById('Prompt').innerHTML="Would you like to retest with: <br>The previous vocab (say 1), <br>Incorrect vocab (say 2) <br>Different vocab (say 3)?";//, or the original vocab (say '4')?
@@ -4234,6 +4462,32 @@ async function GameLoop() {
     //}
 }
 
+async function BeginTest() {
+    var checkboxes = document.getElementsByClassName('Vocab');
+    var englatRadios = document.getElementsByName('EngLat');
+    for (var i = 0; i < englatRadios.length; i++) {
+        if (englatRadios[i].checked) {
+            englat = i;
+        }
+    }
+    for (var i = 0; i < checkboxes.length; i++) {
+        if (checkboxes[i].checked) {
+            selectedVocab.push(checkboxes[i].id);
+        }
+    }
+    if (selectedVocab.length == 0) {
+        alert("Please select at least one vocab group to be tested on.");
+    }
+    else {
+        Choosing = document.getElementById('Choosing');
+        Choosing.style.display = 'none';
+        TestSect = document.getElementById('Test');
+        TestSect.style.display = 'block';
+        AddVocab();
+        await GameLoop();
+    }
+}
+
 //Create a login and register system
 //This system will allow users to track their scores over time, use mastery, use an algorithm to come up with personalised tests.
 //It could also allow users to create their own vocab lists and share them with others.
@@ -4246,3 +4500,6 @@ async function GameLoop() {
 
 //Add a derivation tester and tips to remember the answers to words
 //Add a way for users to provide user feedback or raise queries within the website
+//Improve variable setup
+
+//There have been a lot of changes to the code recently, so I need to test to make sure everything still works as intended
