@@ -1,6 +1,6 @@
 /* CSS Variables for colors */
 :root {
-    /* Original */
+    /* Original
     --header-color: aqua;
     --bg-color: lightblue;
     --base-color: #d8bfd8;
@@ -9,6 +9,7 @@
     --selected-color:  #e269c6;
     --button-color: orange;
     --buttonHover-color: darkorange;
+    */
     /* Second attempt 
     --header-color: #e2bd6b;
     --bg-color:#e3cea3;
@@ -29,7 +30,7 @@
     --button-color: #437697;
     --buttonHover-color:#475E68;
     */
-    /* Fourth attempt - gladiator theme AI Version 
+    /* Fourth attempt - gladiator theme AI Version*/
     --header-color: #A30000;
     --bg-color: #FFF8E1;
     --base-color: rgb(209, 155, 8);
@@ -38,7 +39,6 @@
     --selected-color: #4169E1;
     --button-color: #A30000;
     --buttonHover-color: #8B0000;
-    */
 }
 
 header {
@@ -61,6 +61,13 @@ body {
     background-color: var(--bg-color);
     position: relative;
     /*background-image: linear-gradient(to right, #c28d59 , #e2c798, #c28d59);*/
+}
+
+#NonHeader {
+    background-image: url(NewBG.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: calc(100vh - 60px); /* 60px is the header height */
 }
 
 .AllVocab {
@@ -154,14 +161,10 @@ div.OtherInputs {
     text-align: center;
     background-color: var(--base-color);
     width: 300px;
-    position: absolute;
-    top: 130%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     padding: 15px;
     border: 2px solid black;
     border-radius: 10px;
-    margin-top: 30px;
+    margin: 50px auto 0px auto;
 }
 
 div.OtherInputs p {
