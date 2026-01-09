@@ -4158,7 +4158,7 @@ var Eduqas = [
     {
         '1stpp' :'centum',
         '2,3,4pp' : 'indecl',
-        'answers' : ['a hundred', '100'],
+        'answers' : ['a hundred', '100', "hundred"],
         'group' : 'Nums',
     
         'englatmast' : 0,
