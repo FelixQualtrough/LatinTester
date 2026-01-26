@@ -433,7 +433,7 @@ var Eduqas = [
         'nominative' :'forum',
         'genitive' : 'fori',
         'gender' : 'n',
-        'answers' : ['forum','market-place'],
+        'answers' : ['forum','market-place', 'marketplace'],
         'group' : 'nouns2',
         'englatmast' : 0,
         'latengmast' : 0
@@ -3753,7 +3753,7 @@ var Eduqas = [
     {
         '1stpp' :'nec… nec',
         '2,3,4pp' : 'indecl',
-        'answers' : ['neither…nor'],
+        'answers' : ['neither...nor', 'neither nor', 'neither... nor', 'neither ...nor', 'neither ... nor'],
         'group' : 'Conjunctions',
 
         'englatmast' : 0,
@@ -4245,6 +4245,10 @@ async function BeginTest() {
     }
 }
 
+function sendEmailQuery() {
+
+}
+
 //Create a login and register system
 //This system will allow users to track their scores over time, use mastery, use an algorithm to come up with personalised tests.
 //It could also allow users to create their own vocab lists and share them with others.
@@ -4261,6 +4265,18 @@ async function BeginTest() {
 
 //There have been a lot of changes to the code recently, so I need to test to make sure everything still works as intended
 //Add a query function for vocab answers
-//Preps include conjs?
 //Add a dev screen where I can see all of the queries and change the vocab
 //Fix problem with the all option for vocab groups
+
+//Use classes+constructors for endings testing
+//Add typo recogniser which works out if it is only slightly off
+//Add a code to correct your answers yourself if you typo etc.
+
+//Add a function where you can end the test early to see what you got wrong. 
+//Make the incorrect box be shown at all time during the test 
+//Make a dictionary function - search for the meaning of words
+
+//Add a way to see what words are in which vocab list before you test
+//Fix the ... words
+//Make an infinite words testing thing
+//Make a mixed Englat and Lateng mode
