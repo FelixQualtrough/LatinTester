@@ -4107,6 +4107,7 @@ async function CheckAnswer(currentValue) {
     //Gives the prompt for the answer
     document.getElementById('Prompt').innerHTML=Question.toUpperCase();
     await GetUserInput();
+    UserAnswer = CorrectTypo(CorrectAnswer, UserAnswer);
     Info.style.display="block";
     if (UserAnswer == "skip" || UserAnswer == "") {
         if (englat == "0") {
@@ -4249,6 +4250,31 @@ function sendEmailQuery() {
 
 }
 
+function getLevenshteinDistance(s1, s2) { //Found online - for typos --- check implementation in CheckAnswer ---dont understand how it works but it seems to work well
+    const track = Array(s2.length + 1).fill(null).map(() => Array(s1.length + 1).fill(null));
+    for (let i = 0; i <= s1.length; i++) track[0][i] = i;
+    for (let j = 0; j <= s2.length; j++) track[j][0] = j;
+    for (let j = 1; j <= s2.length; j++) {
+        for (let i = 1; i <= s1.length; i++) {
+            const indicator = s1[i - 1] === s2[j - 1] ? 0 : 1;
+            track[j][i] = Math.min(
+                track[j][i - 1] + 1, // deletion
+                track[j - 1][i] + 1, // insertion
+                track[j - 1][i - 1] + indicator // substitution
+            );
+        }
+    }
+    return track[s2.length][s1.length];
+}
+
+function CorrectTypo(answers, UserAnswer) { //Check implementation in CheckAnswer
+    const threshold = 1; // Allow up to 1 typo
+    const closeMatches = answers.filter(word => {
+        return getLevenshteinDistance(UserAnswer, word) <= threshold;
+    });
+    return closeMatches[0];
+}
+
 //Create a login and register system
 //This system will allow users to track their scores over time, use mastery, use an algorithm to come up with personalised tests.
 //It could also allow users to create their own vocab lists and share them with others.
@@ -4273,10 +4299,13 @@ function sendEmailQuery() {
 //Add a code to correct your answers yourself if you typo etc.
 
 //Add a function where you can end the test early to see what you got wrong. 
-//Make the incorrect box be shown at all time during the test 
+//Make the incorrect box be shown at all time during the test
 //Make a dictionary function - search for the meaning of words
 
-//Add a way to see what words are in which vocab list before you test
+//Add a way to see what words are in which vocab list before you test - showing which words are within which section
 //Fix the ... words
 //Make an infinite words testing thing
 //Make a mixed Englat and Lateng mode
+
+//Add pages that explain grammar
+//Allow the user to choose the length of the test - increase or decrease the number of questions
