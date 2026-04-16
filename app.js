@@ -1,3 +1,4 @@
+//When checking the answers, why not replace all spaces - this would make ellipses easier to deal with
 /*
 class Word {
     constructor(answers, group, englatmast, latengmast, extraInfo) {
@@ -75,6 +76,7 @@ var Eduqas = [
 ]
 */
 
+//must fix the ... words
 var englat = 0; //1 for Eng to Lat, 0 for Lat to Eng
 var selectedVocab = [];
 var Eduqas = [
@@ -3654,7 +3656,7 @@ var Eduqas = [
     {
         '1stpp' :'aut… aut',
         '2,3,4pp' : 'indecl',
-        'answers' : ['either… or'],
+        'answers' : ['either ... or', 'either...or', 'either... or', 'either ...or', 'either or'],
         'group' : 'Conjunctions',
 
         'englatmast' : 0,
@@ -3735,7 +3737,7 @@ var Eduqas = [
     {
         '1stpp' :'ne',
         '2,3,4pp' : 'indecl',
-        'answers' : ['that… not','so that… not'],
+        'answers' : ['that... not','so that... not', 'that ... not','so that ... not', 'that ...not','so that ...not', 'that...not','so that...not', 'that not','so that not'],
         'group' : 'Conjunctions',
 
         'englatmast' : 0,
@@ -3762,7 +3764,7 @@ var Eduqas = [
     {
         '1stpp' :'neque… neque',
         '2,3,4pp' : 'indecl',
-        'answers' : ['neither…nor'],
+        'answers' : ['neither...nor', 'neither nor', 'neither... nor', 'neither ...nor', 'neither ... nor'],
         'group' : 'Conjunctions',
 
         'englatmast' : 0,
@@ -3798,7 +3800,7 @@ var Eduqas = [
     {
         '1stpp' :'num?',
         '2,3,4pp' : 'indecl',
-        'answers' : ['surely… not?'],
+        'answers' : ['surely ... not?', 'surely...not?', 'surely... not?', 'surely ...not?', 'surely not?'],
         'group' : 'Conjunctions',
 
         'englatmast' : 0,
@@ -4097,9 +4099,9 @@ function UpdateProgressAndScore() {
 async function CheckAnswer(currentValue) {
     UpdateProgressAndScore();
     Info = document.getElementById('Info');
-    Info.style.display="none";
+    Info.style.visibility="hidden"; // (1)    //As a test, i have changed all of these from .style.display to .style.visibility - does this work? - I have labelled them 1,2,3,4
     i = currentValue;
-    Question = i[0]
+    Question = i[0];
     CorrectAnswer = i[1];
     if (Array.isArray(Question)) {
     Question = Question.join(",");
@@ -4108,7 +4110,7 @@ async function CheckAnswer(currentValue) {
     document.getElementById('Prompt').innerHTML=Question.toUpperCase();
     await GetUserInput();
     UserAnswer = CorrectTypo(CorrectAnswer, UserAnswer);
-    Info.style.display="block";
+    Info.style.visibility="visible"; // (2)
     if (UserAnswer == "skip" || UserAnswer == "") {
         if (englat == "0") {
             Info.innerHTML = `Answer(s): ${CorrectAnswer.join(", ")}`;
@@ -4146,7 +4148,7 @@ async function CheckAnswer(currentValue) {
         TotalQs += 1;
         await waitingKeypress();
         UpdateProgressAndScore();
-        Info.style.display="none";
+        Info.style.visibility="hidden"; // (3)
 } 
 
 function AddToWantedVocab(properties, answers, indexOf) {
@@ -4174,9 +4176,15 @@ function AddVocab() {
 const WantedVocabBackup = WantedVocab
 
 async function GameLoop() {
+    //Make a new order for testing - Call a function GetUserInput(),
+    // then CheckAnswer(), 
+    //then UpdateProgress() and UpdateInfo()
+    //Create a better way of sorting the vocab -- use filter()
     const ProgressDiv = document.getElementById('ProgressDiv');
     const IncorrectAnswersSect = document.getElementById('Incorrect');
+    //Removed as not fully implemented yet and need to update source code const QueryBox = document.getElementById('queryBox');
     IncorrectAnswersSect.style.display="none";
+    //Removed as not fully implemented yet and need to update source code QueryBox.style.display="block";
     //Shows progress bar div
     ProgressDiv.style.display = "block";
     TotalQs = 0;
@@ -4187,7 +4195,8 @@ async function GameLoop() {
     for (i of WantedVocab) {
         await CheckAnswer(i);
     }
-    Info.style.display="block";
+    //Removed as not fully implemented yet and need to update source code QueryBox.style.display="none";
+    Info.style.visibility="visible"; // (4) - I have changed this to visibility like the others, but does it work? - Check
     if (mark != TotalQs) {
         Info.innerHTML="The word(s) you got incorrect, along with their answers, were:";
         IncorrectAnswersSect.style.display="block";
