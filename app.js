@@ -732,7 +732,7 @@ var Eduqas = [
         'nominative' :'homo',
         'genitive' : 'hominis',
         'gender' : 'm',
-        'answers' : ['man','human being','person'],
+        'answers' : ['man','human being', 'human', 'person'],
         'group' : 'nouns3',
         'englatmast' : 0,
         'latengmast' : 0
