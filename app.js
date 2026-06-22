@@ -4096,7 +4096,7 @@ function UpdateProgressAndScore() {
 }
 
 //Apparently using async and await makes it so that the function waits until the user has inputted something before continuing
-async function CheckAnswer(currentValue) {
+async function CheckAnswer(currentValue, englat) {
     UpdateProgressAndScore();
     Info = document.getElementById('Info');
     Info.style.visibility="hidden"; // (1)    //As a test, i have changed all of these from .style.display to .style.visibility - does this work? - I have labelled them 1,2,3,4
@@ -4177,7 +4177,7 @@ function AddVocab() {
 //I have tried .slice() to make a backup copy of the wanted vocab so that I can reset it later on as using const doesn't seem to work
 const WantedVocabBackup = WantedVocab
 
-async function GameLoop() {
+async function GameLoop(englat) {
     //Make a new order for testing - Call a function GetUserInput(),
     // then CheckAnswer(), 
     //then UpdateProgress() and UpdateInfo()
@@ -4195,7 +4195,7 @@ async function GameLoop() {
     ToRemove = [];
     shuffle(WantedVocab);
     for (i of WantedVocab) {
-        await CheckAnswer(i);
+        await CheckAnswer(i, englat);
     }
     //Removed as not fully implemented yet and need to update source code QueryBox.style.display="none";
     Info.style.visibility="visible"; // (4) - I have changed this to visibility like the others, but does it work? - Check
@@ -4253,7 +4253,7 @@ async function BeginTest() {
         TestSect = document.getElementById('Test');
         TestSect.style.display = 'block';
         AddVocab();
-        await GameLoop();
+        await GameLoop(englat);
     }
 }
 
