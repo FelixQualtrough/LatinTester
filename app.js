@@ -4109,7 +4109,9 @@ async function CheckAnswer(currentValue) {
     //Gives the prompt for the answer
     document.getElementById('Prompt').innerHTML=Question.toUpperCase();
     await GetUserInput();
-    UserAnswer = CorrectTypo(Answers, UserAnswer);
+    if (englat == "0") {
+        UserAnswer = CorrectTypo(CorrectAnswer, UserAnswer);
+    }
     Info.style.visibility="visible"; // (2)
     if (UserAnswer == "skip" || UserAnswer == "") {
         if (englat == "0") {
