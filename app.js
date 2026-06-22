@@ -4109,7 +4109,7 @@ async function CheckAnswer(currentValue) {
     //Gives the prompt for the answer
     document.getElementById('Prompt').innerHTML=Question.toUpperCase();
     await GetUserInput();
-    if (englat == 0) { //Try and make CorrectTypo work for english to latin so we dont need to do this
+    if (englat == "0") { //Try and make CorrectTypo work for english to latin so we dont need to do this
         UserAnswer = CorrectTypo(Answers, UserAnswer);
     }
     Info.style.visibility="visible"; // (2)
