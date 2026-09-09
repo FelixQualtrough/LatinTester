@@ -1,208 +1,177 @@
 /* CSS Variables for colors */
 :root {
-    /* Original
-    --header-color: aqua;
-    --bg-color: lightblue;
-    --base-color: #d8bfd8;
-    --accent-color: rgb(213, 106, 213);
-    --hover-color: #dda0dd;
-    --selected-color:  #e269c6;
-    --button-color: orange;
-    --buttonHover-color: darkorange;
-    */
-    /* Second attempt 
-    --header-color: #e2bd6b;
-    --bg-color:#e3cea3;
-    --base-color:rgb(163, 188, 211);
-    --accent-color:rgb(95, 141, 240);
-    --hover-color:rgb(108, 167, 222);
-    --selected-color:#5555eb;
-    --button-color: darkorange;
-    --buttonHover-color:rgb(186, 101, 3);
-    */
-    /*Third attempt - gladiator theme
-    --header-color: #E8C668;
-    --bg-color:#e3cea3;
-    --base-color:#E8C668;
-    --accent-color:#CEA04D;
-    --hover-color:#844A17;
-    --selected-color:#5555eb;
-    --button-color: #437697;
-    --buttonHover-color:#475E68;
-    */
-    /* Fourth attempt - gladiator theme AI Version*/
-    --header-color: #A30000;
-    --bg-color: #FFF8E1;
-    --base-color: rgb(209, 155, 8);
-    --accent-color: #8B0000;
-    --hover-color: #CC7722;
-    --selected-color: #4169E1;
-    --button-color: #A30000;
-    --buttonHover-color: #8B0000;
+    --header-color: #8B1E1E;
+    --base-color: #D7C7A3;
+    --accent-color: #d9a950;
+    --hover-color: #E4D7BD;
+    --selected-color: #d9a950;
+    --button-color: #B8A98A;
+    --buttonHover-color: #B8A98A;
+    --highlight-colour: #C9A227;
 }
 
+/* Header styling */
+
 header {
-    height : 60px;
-    background-color: var(--header-color);
-    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: var(--header-color);
     text-align: center;
+    line-height: 0;
 }
 
 header h1 {
-    margin : 0;
-    line-height: 60px;
+    font-weight: bolder;    
     font-size: 30px;
 }
+
+header h3 {
+    margin-top: 40px;
+    font-size: 19px;
+}
+
+/* Main page styling */
 
 body {
     margin: 0px;
     padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--bg-color);
-    position: relative;
+    font-family: Cinzel, Arial, Helvetica, sans-serif;
+    color: #000000;
+    font-weight: 700;
+    background-image: url(NewNewAIBG.png);
+    background-size: cover;
 }
 
-#NonHeader {
+/*#NonHeader {
     background-image: url(NewBG.png);
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: calc(100vh - 60px); /* 60px is the header height */
+    min-height: calc(100vh - 100px); /* 60px is the header height */
+/*}*/
+
+h4 {
+    font-size: 20px
 }
 
-.AllVocab {
-    text-align: center;
-    width: 100px;
-    margin: 20px auto 0 auto;
-    font-weight: bold;
-    box-sizing: border-box;
-    border-radius: 7px;
-}
+/* Vocab Choice page */
 
-.OtherVocab li, .AllVocab {
-    border: 1px solid black;
-    background-color: var(--base-color);
-}
-
-.OtherVocab li:hover, .AllVocab:hover {
-    background-color: var(--hover-color);
-}
-
-.OtherVocab li:has(input[type="checkbox"]:checked) label, .AllVocab:has(input[type="checkbox"]:checked) label{
-    background-color: var(--accent-color);
-    color: white;
-}
-
-.OtherVocab ul > li:first-child, .OtherVocab ul > li:first-child label {
-    font-weight: bold;
-    filter: brightness(85%);
-    border-radius: 7px 7px 0 0;
-    border-bottom: 2px solid black;
-}
-
-.OtherVocab ul > li:last-child, .OtherVocab ul > li:last-child label {
-    border-radius: 0 0 7px 7px;
-}
-
-/*Hides the checkbox elements*/
-.OtherVocab input[type="checkbox"], .AllVocab input[type="checkbox"] {
-    appearance: none;
-    -webkit-appearance: none; /* For Safari */
-    display: none;
-}
-
-.OtherVocab li label, .AllVocab label{
-    display: block;
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    cursor: pointer;
-}
-
-.AllVocab label {
-    border-radius: 7px;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 15px 0px 15px 0px;
-}
-
-div.VocabChoice {
+.VocabChoice {
+    margin-top: 160px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 
-div.VocabChoice ul {
-    padding: 5px 15px 5px 15px;
+.OtherVocab {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
 }
 
-div.OtherVocab {
+.VocabChoiceCard {
     display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 20px 10px 0px 10px;
+    width: 160px;
+    background-color: var(--base-color);
+}   
+
+.VocabChoiceCard label {
+    display: flex;
+    flex-grow: 1;
+    padding: 10px;
+    border-top: 1px solid black;
+    cursor: pointer;
+    align-items: center;
     justify-content: center;
+    text-align: center;
+    background-color: var(--base-color);
+}
+
+.VocabChoiceCard .all {
+    border-top: none;
+    border-bottom: 5px solid black;
+    min-height: 40px;
+}
+
+.VocabChoice input { /* Hides the checkbox */
+    display: none;
+}
+
+.VocabChoice .VocabChoiceCard label:hover {
+    /*backdrop-filter: brightness(1.10) saturate(105%) hue-rotate(-1deg);*/
+    background-color: var(--hover-color);
+}
+
+.VocabChoice label:has(input[type="checkbox"]:checked) {
+    /*backdrop-filter: brightness(0.79) saturate(165%) hue-rotate(-2deg);*/
+    background-color: var(--selected-color);
+}
+
+.VocabChoice label:first-child{
+    /*backdrop-filter: brightness(0.90);*/
+    border-radius: 9px 9px 0px 0px;
+}
+
+.VocabChoice label:last-child{
+    border-radius: 0px 0px 9px 9px;
+}
+
+#AllVocab label {
+    border-top: none;
+    border-radius: 10px;
 }
 
 button {
-    background-color: var(--button-color);
-    color: white;
+    background-color: var(--base-color);
     border: none;
     border-radius: 5px;
     cursor: pointer;
     width: 150px;
     height: 50px;
     font-size: 30px;
+    margin-top: 10px;
     border: 1px solid black;
-    margin: 15px;
+    font-family: inherit;
+    font-weight: inherit;
+}
+
+button:hover {
+    background-color: var(--hover-color);
 }
 
 div.OtherInputs {
     text-align: center;
-    background-color: var(--base-color);
     width: 300px;
     padding: 15px;
-    border: 2px solid black;
-    border-radius: 10px;
-    margin: 50px auto 0px auto;
-}
-
-div.OtherInputs p {
-    font-size: 20px;
-}
-
-button:hover {
-    background-color: var(--buttonHover-color);
-}
-
-h4 {
-    font-size: 20px
-}
-
-.OtherInputs label {
-    display: inline-block; 
+    margin: 0px auto 0px auto;
 }
 
 .OtherInputs input{
-    margin-top: 20px;
-    margin-bottom: 20px;
     appearance: none;
     -webkit-appearance: none; /* For Safari */
     display: none;
 }
 
 .OtherInputs label {
+    display: inline-block; 
     width: 60%;
-    margin: 15px;
+    margin: 10px;
     height: 100%;
     border: 1px solid black;
-    background-color: var(--hover-color);
+    background-color: var(--base-color);
     border-radius: 5px;
     line-height: 0;
     cursor: pointer;
+    padding: 0 20px 0 20px;
 }
 
 .OtherInputs label:hover {
-    background-color: var(--accent-color);
+    background-color: var(--hover-color);
 }
 
 .OtherInputs span:has(input[type="radio"]:checked) label {
@@ -211,37 +180,62 @@ h4 {
     border: 2px solid black;
 }
 
-div.Test {
+#Buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+/* Test Section */
+
+.TestingPage {
     display: none;
-    flex-direction: column;
-    position: absolute;
-    left: 50%;
-    margin-top: 400px;
-    transform: translate(-50%, -50%);
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 200px;
+}
+
+div.Test {
+    display: block;
+    /*The following lines are new and experimenting with another feature to make the testing area look better in NEWCHANGES1*/
+    background: rgba(0, 0, 0, 0.01); /* tint colour */
+    backdrop-filter: blur(2px) brightness(0.9); /* tint + blur */
+    padding: 20px;
+    border-radius: 20px;
 }
 
 div.Test input {
+    margin-left: 49px; /*Changed from 35 in NEWCHANGES1*/
     height: 50px;
     width: 400px;
     font-size: 25px;
-    margin-left: 35px;
     background-color: var(--base-color);
     border: 2px solid black;
+    /*Added in NEWCHANGES1*/
+    font-family: Cinzel, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
 }
 
 div.Test input::placeholder {
     color: black;
-    opacity: 0.7;
+    opacity: 0.8;
+    font-family: cinzel;
+    font-weight: 500;
 }
 
 div.Test input:focus {
-    outline: none;
-    border: 3px solid  black;
+    outline-color: black;
+    outline-style: double;
 }
 
 .Test h4 {
     font-size: 30px;
     width: 500px;
+    /*Following is added for in NEWCHANGES1*/
+    text-align: center;
 }
 
 .Test button {
@@ -262,18 +256,24 @@ div.Test input:focus {
     padding: 5px;
 }
 
-.Test .Incorrect {
+.Incorrect {
+    max-height: 505px;
     width: 400px;
-    height: 200px;
     overflow-y: auto;
     padding: 10px;
+    background-color: var(--base-color);
+    border-radius: 6px;
+    border: 2px solid black;
+    font-size: 19px;
 }
 
-.Test .Incorrect, .Test .Info {
+.Test .Info {
     margin-left: auto;
     margin-right: auto;
     background-color: var(--base-color);
     border-radius: 6px;
+    width: 400px;
+    border: 2px solid black;
 }
 
 .w3-progress-container {
@@ -282,17 +282,18 @@ div.Test input:focus {
     position:relative;
     background-color: var(--base-color);
     border: 2px solid black;
+    overflow: hidden; /* Fixes the problem where the filled section clips outside of the bar */
 }
 
 .w3-progressbar {
-    background-color: var(--accent-color) ;
-    height:100%;
-    position:absolute;
-    line-height:inherit;
+    background-color: var(--accent-color);
+    height: 100%;
+    position: absolute;
+    line-height: inherit;
 }
 
 .w3-round-xlarge {
-    border-radius:16px
+    border-radius: 16px;
 }
 
 .ProgressDiv {
@@ -300,7 +301,7 @@ div.Test input:focus {
 }
 
 #Score, #Progress {
-    font-size: 25px;
+    font-size: 23px;
     background-color: var(--base-color);
     width: 220px;
     height: 50px;
@@ -320,14 +321,14 @@ div.Test input:focus {
 /* Scrollbar styling for Info div */
 /* Make the button boxes look like roman stone with cracks etc and the writing carved into it like a 
 stone tablet.*/
-.Test .Incorrect::-webkit-scrollbar {
+/*.Test */.Incorrect::-webkit-scrollbar {
     border-radius: 6px;
     width: 12px;
     background-color: var(--hover-color);
     color: var(--accent-color);
 }
 
-.Test .Incorrect::-webkit-scrollbar-thumb {
+/*.Test*/ .Incorrect::-webkit-scrollbar-thumb {
     background-color: var(--accent-color);
     border-radius: 6px;
 }
@@ -356,4 +357,10 @@ stone tablet.*/
     font-size: 16px;
     border: none;
     margin: 0;
+}
+
+/* Media queries for responsive design */
+
+@media (min-width: 400px) {
+    
 }
